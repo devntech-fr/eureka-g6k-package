@@ -3,7 +3,7 @@
     "description": "Eureka G6K simulator PHP engine package",
     "autoload": {
         "psr-4": {
-            "Devntech\\G6K\\": "src/"
+            "Devntech\\G6K\\": "src/G6K"
         }
     },
     "minimum-stability": "dev",
@@ -44,5 +44,6 @@
             "@g6k-scripts",
             "@auto-scripts"
         ]
-    }
+    },
+    "license": "MIT"
 }
