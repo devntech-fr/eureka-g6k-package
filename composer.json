@@ -48,7 +48,6 @@
         "symfony/var-dumper": "^5.4.0"
     },
     "replace": {
-        "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
         "symfony/polyfill-php74": "*",
         "symfony/polyfill-php73": "*",
