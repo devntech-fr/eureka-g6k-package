@@ -6,14 +6,13 @@
             "Devntech\\G6K\\": "src/G6K"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
         "ext-ctype": "^8.0",
         "ext-iconv": "^8.0",
         "ashleydawson/simple-pagination": "1.0.*",
-        "eureka2/acroforms": "^1.0.6",
         "flow/jsonpath": "^0.4.0",
         "mck89/peast": "^1.11",
         "mobiledetect/mobiledetectlib": "^2.8",
@@ -35,8 +34,7 @@
         "symfony/twig-bundle": "^5.4.0",
         "symfony/validator": "^5.4.0",
         "symfony/web-link": "^5.4.0",
-        "symfony/yaml": "^5.4.0",
-        "willdurand/js-translation-bundle": "^4.0"
+        "symfony/yaml": "^5.4.0"
     },
     "require-dev": {
         "symfony/browser-kit": "^5.4.0",
