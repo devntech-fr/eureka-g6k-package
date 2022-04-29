@@ -17,7 +17,45 @@
         "flow/jsonpath": "^0.4.0",
         "mck89/peast": "^1.11",
         "mobiledetect/mobiledetectlib": "^2.8",
-        "mpdf/mpdf": "^8.0"
+        "mpdf/mpdf": "^8.0",
+        "sensio/framework-extra-bundle": "^6.1",
+        "symfony/asset": "^5.4.0",
+        "symfony/console": "^5.4.0",
+        "symfony/expression-language": "^5.4.0",
+        "symfony/flex": "^1.3",
+        "symfony/framework-bundle": "^5.4.0",
+        "symfony/lock": "^5.4.0",
+        "symfony/mime": "^5.4",
+        "symfony/monolog-bundle": "^3.1",
+        "symfony/orm-pack": "*",
+        "symfony/process": "^5.4.0",
+        "symfony/security-bundle": "^5.4.0",
+        "symfony/serializer-pack": "*",
+        "symfony/swiftmailer-bundle": "^3.1",
+        "symfony/twig-bundle": "^5.4.0",
+        "symfony/validator": "^5.4.0",
+        "symfony/web-link": "^5.4.0",
+        "symfony/yaml": "^5.4.0",
+        "willdurand/js-translation-bundle": "^4.0"
+    },
+    "require-dev": {
+        "symfony/browser-kit": "^5.4.0",
+        "symfony/css-selector": "^5.4.0",
+        "symfony/debug-pack": "*",
+        "symfony/dotenv": "^5.4.0",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/phpunit-bridge": "~3.4|~4.0",
+        "symfony/profiler-pack": "*",
+        "symfony/test-pack": "*",
+        "symfony/var-dumper": "^5.4.0"
+    },
+    "replace": {
+        "paragonie/random_compat": "2.*",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
     },
     "scripts": {
         "symfony-scripts": [
@@ -44,6 +82,9 @@
             "@g6k-scripts",
             "@auto-scripts"
         ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
     },
     "license": "MIT"
 }
