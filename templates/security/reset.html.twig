@@ -1,0 +1,54 @@
+{% extends 'security/layout.html.twig' %}
+
+{% trans_default_domain 'security' %}
+
+{% block title %}{{ 'security.resetting.title'|trans }}{% endblock %}
+
+{% block body %}
+<div class="row">
+	<div id="resetbox" class="col-md-6 col-sm-8 mx-auto mt-5">
+		<div class="card" >
+			<div class="card-header bg-primary">
+				<div class="float-right small">
+				</div>
+				<div class="card-title mb-0 font-weight-bold text-white">{{ 'security.resetting.header'|trans }}</div>
+			</div>	 
+			<div style="padding-top:30px" class="card-body">
+				{{ form_start(form) }}
+{#				<form name="user_resetting_reset_form" method="post" action="{{ path('app_reset_password', {'token': token}) }}" class="user_resetting_reset form-horizontal">#}
+					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+					<input type="hidden" name="token" value="{{ token }}">
+					{% if error %}
+						<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+					{% endif %}
+					<div id="user_resetting_reset_form">
+						<div>
+							<label for="user_resetting_reset_form_plainPassword_first" class="required">{{ 'security.resetting.reset.new_password'|trans }}</label>
+							<div class="input-group mb-3">
+								{{ form_widget(form.plainPassword.first, {'attr': {'value': newFirst, 'autocomplete': 'new-password', 'class': 'form-control'}}) }}
+								<button class="pwd-shower" style="border:none;background:transparent" title="{{ 'security.change_password.show_hide'|trans }}"><i class=" far fa-eye"></i></button>
+							</div>
+						</div>
+						<div>
+							<label for="user_resetting_reset_form_plainPassword_second" class="required">{{ 'security.resetting.reset.new_password_confirmation'|trans }}</label>
+							<div class="input-group mb-3">
+								{{ form_widget(form.plainPassword.second, {'attr': {'value': newSecond, 'autocomplete': 'new-password', 'class': 'form-control'}}) }}
+								<button class="pwd-shower" style="border:none;background:transparent" title="{{ 'security.change_password.show_hide'|trans }}"><i class=" far fa-eye"></i></button>
+							</div>
+						</div>
+					</div>
+					<div style="margin-top:10px" class="form-group form-inline">
+						<div class="col-sm-8 controls">
+							<button type="submit" class="btn btn-primary btn-lg btn-block form-control" style="height: auto;">{{ 'security.resetting.reset.submit'|trans }}</button>
+						</div>
+						<div class="col-sm-4 controls">
+							<input type="submit" class="btn btn-secondary btn-lg btn-block form-control" style="height: auto;" name="_cancel" value="{{ 'security.resetting.cancel'|trans }}" />
+						</div>
+					</div>
+{#				</form>#}
+				{{ form_end(form) }}
+			</div>
+		</div>  
+	</div>
+</div>
+{% endblock body %}
