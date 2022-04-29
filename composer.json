@@ -9,9 +9,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.4",
-        "ext-ctype": ">=7.4",
-        "ext-iconv": ">=7.4",
+        "php": "^8.0",
+        "ext-ctype": "^8.0",
+        "ext-iconv": "^8.0",
         "ashleydawson/simple-pagination": "1.0.*",
         "eureka2/acroforms": "^1.0.6",
         "flow/jsonpath": "^0.4.0",
