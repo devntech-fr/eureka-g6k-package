@@ -1,0 +1,49 @@
+{
+    "name": "devntech-fr/g6k-simulator-package",
+    "description": "Eureka G6K simulator PHP engine package",
+    "autoload": {
+        "psr-4": {
+            "Devntech\\G6K\\": "src/G6K"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4",
+        "ext-ctype": "^7.4",
+        "ext-iconv": "^7.4",
+        "ashleydawson/simple-pagination": "1.0.*",
+        "eureka2/acroforms": "^1.0.6",
+        "flow/jsonpath": "^0.4.0",
+        "mck89/peast": "^1.11",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "mpdf/mpdf": "^8.0"
+    },
+    "scripts": {
+        "symfony-scripts": [
+            "Devntech\\G6K\\Composer\\ScriptHandler::buildDotenv"
+        ],
+        "g6k-scripts": [
+            "Devntech\\G6K\\Composer\\ScriptHandler::installUsers",
+            "Devntech\\G6K\\Composer\\ScriptHandler::installDemo"
+        ],
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "bazinga:js-translation:dump %PUBLIC_DIR%/assets/bundles/bazingajstranslation/js": "symfony-cmd",
+            "g6k:assets:manifest:refresh": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts",
+            "@auto-scripts"
+        ],
+        "post-create-project-cmd": [
+            "@g6k-scripts",
+            "@auto-scripts"
+        ]
+    },
+    "license": "MIT"
+}

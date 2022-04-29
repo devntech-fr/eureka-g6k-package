@@ -1,0 +1,73 @@
+{% extends 'base_layout.html.twig' %}
+
+{% import "base/macros/form.html.twig" as form %}
+
+{% block title %}{{ step.simulator.label }} - {{ step.label }} - {{ parent() }}{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('simulator') }}
+	<link rel='stylesheet' type='text/css' href="{{ asset('assets/base/js/libs/bootstrap/css/bootstrap.css') }}" />
+	<link rel='stylesheet' type='text/css' href="{{ asset('assets/Demo/css/common.css') }}" />
+	<link rel='stylesheet' type='text/css' href="{{ asset('assets/Demo/css/' ~ step.simulator.name ~ '.css') }}" />
+	<style>
+		.btn-float {
+			position: fixed;
+			bottom: 50px;
+			right: 50px;
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+	{% if app.request.query.get('demarche') is not null %}
+	<section
+			class="about_area mt-180"
+			style="margin-top: 5rem;"
+			data-demarche="{{ app.request.query.get('demarche') }}">
+	{% else %}
+	<section
+			class="about_area mt-180"
+			style="margin-top: 5rem;">
+	{% endif %}
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="btn-group" role="group" aria-label="back to home">
+						<a href="{{ path('homepage') }}" class="btn btn-primary btn-lg">Retour à l'accueil</a>
+					</div>
+				</div>
+			</div>
+			<div class="step-simulator-heading row">
+				<h1>{% block page_title %}{{ step.simulator.label }}{% endblock %}</h1>
+				{{ form.paragraphs(step.simulator.description|jscode) }}
+				{{ form.breadcrumb(_context) }}
+			</div>
+
+			<div id="step{{ step.id }}" class="step-page row step-container{% if step.simulator.dynamic %} dynamic{%- endif -%}{% if script == 0 %} no-js{%- endif -%}">
+				{{ form.heading(step.description, 2, "step-description legend") }}
+				{{ form.profiles(_context) }}
+				{{ form.requiredmention(_context) }}
+				<form method="post" action="" enctype="multipart/form-data" id="g6k_form" data-step="{{ step.id }}">
+					{{ form.draw(_context, 'form-horizontal', 'form-group', 'col-form-label', 'input-group', 'form-control', 'card bg-light', 'card-header', 'card-body') }}
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					{% if simulation_result is defined and simulation_result is not null %}
+						{{ dump(simulation_result) }}
+						<a href="{{ path('ordering_add_to_cart', {'product_uid': simulation_result.getUid()}) }}" class="btn btn-primary btn-lg btn-float">Ajouter au panier</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	{% include 'Demo/section/scripts.html.twig' %}
+	{{ encore_entry_script_tags('simulator') }}
+{% endblock %}
