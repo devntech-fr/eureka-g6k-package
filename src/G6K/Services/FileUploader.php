@@ -23,7 +23,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-namespace App\G6K\Services;
+namespace Devntech\G6K\Services;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -34,7 +34,7 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  * This service is defined in config/packages/g6k.yml as follows:
  *
  *    g6k.file_uploader:
- *        class: App\G6K\Services\FileUploader
+ *        class: Devntech\G6K\Services\FileUploader
  *        arguments: ['%upload_directory%']
  *
  * @copyright Jacques Archimède

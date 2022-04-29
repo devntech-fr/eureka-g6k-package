@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  *  The class JsonSQLStatement represents a prepared statement and, 
@@ -35,7 +35,7 @@ use App\G6K\Manager\Json\JsonSQL;
 abstract class Statement  {
 
 	/**
-	 * @var \App\G6K\Manager\Json\JsonSQL $jsonsql the JsonSQL instance
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL $jsonsql the JsonSQL instance
 	 *
 	 * @access  protected
 	 *
@@ -75,7 +75,7 @@ abstract class Statement  {
 	protected $params = array();
 
 	/**
-	 * @var \App\G6K\Manager\Json\JsonSQL\Engine $engine The JsonSQL engine
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The JsonSQL engine
 	 *
 	 * @access  protected
 	 *

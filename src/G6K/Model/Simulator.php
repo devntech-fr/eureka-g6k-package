@@ -24,12 +24,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
-use App\G6K\Manager\ExpressionParser\DateFunction;
-use App\G6K\Manager\ExpressionParser\MoneyFunction;
-use App\G6K\Manager\ExpressionParser\NumberFunction;
-use App\G6K\Manager\ExpressionParser\PercentFunction;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\MoneyFunction;
+use Devntech\G6K\Manager\ExpressionParser\NumberFunction;
+use Devntech\G6K\Manager\ExpressionParser\PercentFunction;
 
 /**
  *
@@ -41,7 +41,7 @@ use App\G6K\Manager\ExpressionParser\PercentFunction;
 class Simulator {
 
 	/**
-	 * @var \App\G6K\Controller\BaseController|\App\G6K\Controller\BaseAdminController $controller The controller that uses this Simulator object
+	 * @var \Devntech\G6K\Controller\BaseController|\Devntech\G6K\Controller\BaseAdminController $controller The controller that uses this Simulator object
 	 *
 	 * @access  private
 	 *
@@ -114,7 +114,7 @@ class Simulator {
 	private $locale = 'fr-FR';
 
 	/**
-	 * @var \App\G6K\Model\RichText     $description The description of this simulator
+	 * @var \Devntech\G6K\Model\RichText     $description The description of this simulator
 	 *
 	 * @access  private
 	 *
@@ -186,7 +186,7 @@ class Simulator {
 	private $datas = array();
 
 	/**
-	 * @var \App\G6K\Model\Profiles $profiles The profiles container used in this simulator
+	 * @var \Devntech\G6K\Model\Profiles $profiles The profiles container used in this simulator
 	 *
 	 * @access  private
 	 *
@@ -242,7 +242,7 @@ class Simulator {
 	private $businessrules = array();
 
 	/**
-	 * @var \App\G6K\Model\RichText     $relatedInformations The informations related to this simulator.
+	 * @var \Devntech\G6K\Model\RichText     $relatedInformations The informations related to this simulator.
 	 *
 	 * @access  private
 	 *
@@ -293,7 +293,7 @@ class Simulator {
 	 * Constructor of class Simulator
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Controller\BaseController|\App\G6K\Controller\BaseAdminController $controller The controller that uses this Simulator object
+	 * @param   \Devntech\G6K\Controller\BaseController|\Devntech\G6K\Controller\BaseAdminController $controller The controller that uses this Simulator object
 	 * @return  void
 	 *
 	 */
@@ -309,7 +309,7 @@ class Simulator {
 	 * Returns the Controller Object that uses this Simulator object.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Controller\BaseController|\App\G6K\Controller\BaseAdminController The Controller Object that uses this Simulator object
+	 * @return  \Devntech\G6K\Controller\BaseController|\Devntech\G6K\Controller\BaseAdminController The Controller Object that uses this Simulator object
 	 *
 	 */
 	public function getController() {
@@ -537,7 +537,7 @@ class Simulator {
 	 * Returns the description of this simulator
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The description of this simulator
+	 * @return  \Devntech\G6K\Model\RichText The description of this simulator
 	 *
 	 */
 	public function getDescription() {
@@ -548,7 +548,7 @@ class Simulator {
 	 * Sets the description of this simulator
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText $description The description of this simulator
+	 * @param   \Devntech\G6K\Model\RichText $description The description of this simulator
 	 * @return  void
 	 *
 	 */
@@ -759,7 +759,7 @@ class Simulator {
 	 * Adds a DatasetChild object in the list of data used by this simulator.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\DatasetChild $data The DatasetChild object
+	 * @param   \Devntech\G6K\Model\DatasetChild $data The DatasetChild object
 	 * @return  void
 	 *
 	 */
@@ -784,7 +784,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id The id of the Data object
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getDataById($id) {
@@ -805,7 +805,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   string $name The name of the Data object
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getDataByName($name) {
@@ -829,7 +829,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id The id of the DataGroup object
-	 * @return  \App\G6K\Model\DataGroup|null The DataGroup object
+	 * @return  \Devntech\G6K\Model\DataGroup|null The DataGroup object
 	 *
 	 */
 	public function getDataGroupById($id) {
@@ -846,7 +846,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   string $name The name of the DataGroup object
-	 * @return  \App\G6K\Model\DataGroup|null The DataGroup object
+	 * @return  \Devntech\G6K\Model\DataGroup|null The DataGroup object
 	 *
 	 */
 	public function getDataGroupByName($name) {
@@ -862,7 +862,7 @@ class Simulator {
 	 * Returns the profiles container used in this simulator
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Profiles The profiles container
+	 * @return  \Devntech\G6K\Model\Profiles The profiles container
 	 *
 	 */
 	public function getProfiles() {
@@ -873,7 +873,7 @@ class Simulator {
 	 * Sets the profiles container used in this simulator
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Profiles $profiles The profiles container
+	 * @param   \Devntech\G6K\Model\Profiles $profiles The profiles container
 	 * @return  void
 	 *
 	 */
@@ -908,7 +908,7 @@ class Simulator {
 	 * Adds a Step object in the list of steps defined by this simulator.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Step $step The Step object
+	 * @param   \Devntech\G6K\Model\Step $step The Step object
 	 * @return  void
 	 *
 	 */
@@ -933,7 +933,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\Step|null the value of stepById
+	 * @return  \Devntech\G6K\Model\Step|null the value of stepById
 	 *
 	 */
 	public function getStepById($id) {
@@ -950,7 +950,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   string $name <parameter description>
-	 * @return  \App\G6K\Model\Step|null the value of stepById
+	 * @return  \Devntech\G6K\Model\Step|null the value of stepById
 	 *
 	 */
 	public function getStepByName($name) {
@@ -989,7 +989,7 @@ class Simulator {
 	 * Adds a Source object in the list of used sources by this simulator.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Source $source The Source object
+	 * @param   \Devntech\G6K\Model\Source $source The Source object
 	 * @return  void
 	 *
 	 */
@@ -1036,7 +1036,7 @@ class Simulator {
 	 * Adds a BusinessRule object in the list of business rules implemented by this simulator
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\BusinessRule $businessrules The BusinessRule object
+	 * @param   \Devntech\G6K\Model\BusinessRule $businessrules The BusinessRule object
 	 * @return  void
 	 *
 	 */
@@ -1061,7 +1061,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\BusinessRule|null the value of businessRuleById
+	 * @return  \Devntech\G6K\Model\BusinessRule|null the value of businessRuleById
 	 *
 	 */
 	public function getBusinessRuleById($id) {
@@ -1077,7 +1077,7 @@ class Simulator {
 	 * Returns the informations related to this simulator.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The informations related to this simulator
+	 * @return  \Devntech\G6K\Model\RichText The informations related to this simulator
 	 *
 	 */
 	public function getRelatedInformations() {
@@ -1088,7 +1088,7 @@ class Simulator {
 	 * Sets the informations related to this simulator.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText $relatedInformations The informations related to this simulator
+	 * @param   \Devntech\G6K\Model\RichText $relatedInformations The informations related to this simulator
 	 * @return  void
 	 *
 	 */
@@ -1101,7 +1101,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\Site|null the value of siteById
+	 * @return  \Devntech\G6K\Model\Site|null the value of siteById
 	 *
 	 */
 	public function getSiteById($id) {
@@ -1118,7 +1118,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\Database|null the value of databaseById
+	 * @return  \Devntech\G6K\Model\Database|null the value of databaseById
 	 *
 	 */
 	public function getDatabaseById($id) {
@@ -1135,7 +1135,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\DataSource|null the value of datasourceById
+	 * @return  \Devntech\G6K\Model\DataSource|null the value of datasourceById
 	 *
 	 */
 	public function getDatasourceById($id) {
@@ -1152,7 +1152,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   string $name <parameter description>
-	 * @return  \App\G6K\Model\DataSource|null the value of datasourceByName
+	 * @return  \Devntech\G6K\Model\DataSource|null the value of datasourceByName
 	 *
 	 */
 	public function getDatasourceByName($name) {
@@ -1169,7 +1169,7 @@ class Simulator {
 	 *
 	 * @access  public
 	 * @param   int $id <parameter description>
-	 * @return  \App\G6K\Model\Source|null the value of sourceById
+	 * @return  \Devntech\G6K\Model\Source|null the value of sourceById
 	 *
 	 */
 	public function getSourceById($id) {
@@ -1365,8 +1365,8 @@ class Simulator {
 	 * Replaces, into the given text, the ID (prefixed with #) of all data by their label inside a HTML data.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $target The initial text
-	 * @return  \App\G6K\Model\RichText|string The replaced text with data labels
+	 * @param   \Devntech\G6K\Model\RichText|string $target The initial text
+	 * @return  \Devntech\G6K\Model\RichText|string The replaced text with data labels
 	 *
 	 */
 	public function replaceByDataLabel($target) {
@@ -1403,8 +1403,8 @@ class Simulator {
 	 * Replaces, into the given text, the footnote reference pattern string by the HTML dfn tag.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $target The initial text
-	 * @return  \App\G6K\Model\RichText|string The replaced text with HTML dfn tag
+	 * @param   \Devntech\G6K\Model\RichText|string $target The initial text
+	 * @return  \Devntech\G6K\Model\RichText|string The replaced text with HTML dfn tag
 	 *
 	 */
 	public function replaceByFootnoteTag($target) {
@@ -1441,7 +1441,7 @@ class Simulator {
 	 *
 	 * @access  protected
 	 * @param   \SimpleXMLElement $data The data item in XML format
-	 * @return  \App\G6K\Model\Data The Data object
+	 * @return  \Devntech\G6K\Model\Data The Data object
 	 *
 	 */
 	protected function loadData($data) {
@@ -1792,8 +1792,8 @@ class Simulator {
 	 *
 	 * @access  protected
 	 * @param   \SimpleXMLElement $field The field in XML format
-	 * @param   \App\G6K\Model\FieldSet $fieldsetObj The field set that contains this field
-	 * @return  \App\G6K\Model\Field The Field object
+	 * @param   \Devntech\G6K\Model\FieldSet $fieldsetObj The field set that contains this field
+	 * @return  \Devntech\G6K\Model\Field The Field object
 	 *
 	 */
 	protected function loadField(\SimpleXMLElement $field, FieldSet $fieldsetObj) {
@@ -1828,7 +1828,7 @@ class Simulator {
 	 *
 	 * @access  protected
 	 * @param   \SimpleXMLElement $action The business rule action in XML format
-	 * @return  \App\G6K\Model\RuleAction The RuleAction object
+	 * @return  \Devntech\G6K\Model\RuleAction The RuleAction object
 	 *
 	 */
 	protected function loadRuleAction(\SimpleXMLElement $action) {
@@ -1922,8 +1922,8 @@ class Simulator {
 	 *
 	 * @access  protected
 	 * @param   \SimpleXMLElement $connector The business rule connector in XML format
-	 * @param   \App\G6K\Model\Connector|null $parentConnector (default: null) The Connector object that contains this connector or this condition
-	 * @return  \App\G6K\Model\Condition|\App\G6K\Model\Connector The Connector or the Condition object
+	 * @param   \Devntech\G6K\Model\Connector|null $parentConnector (default: null) The Connector object that contains this connector or this condition
+	 * @return  \Devntech\G6K\Model\Condition|\Devntech\G6K\Model\Connector The Connector or the Condition object
 	 *
 	 */
 	protected function loadConnector(\SimpleXMLElement $connector, $parentConnector = null) {
@@ -2107,8 +2107,8 @@ class Simulator {
 	 * Converts the lines of the given text into HTML paragraphs
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $string <parameter description>
-	 * @return  \App\G6K\Model\RichText|string <description of the return value>
+	 * @param   \Devntech\G6K\Model\RichText|string $string <parameter description>
+	 * @return  \Devntech\G6K\Model\RichText|string <description of the return value>
 	 *
 	 */
 	public function paragraphs ($string) {
@@ -2989,7 +2989,7 @@ class Simulator {
 	 * Cleans the text produced with the Javascript component "bootstrap3-wysihtml5" for its registration in the XML file of definition of this simulator
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Model\RichText|null $richtext The text to clean
+	 * @param   \Devntech\G6K\Model\RichText|null $richtext The text to clean
 	 * @return  string The cleaned text
 	 *
 	 */
@@ -3573,7 +3573,7 @@ class Simulator {
 	 * Converts the properties of a RuleAction object into an XML attributes string
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Model\RuleAction $action The RuleAction object
+	 * @param   \Devntech\G6K\Model\RuleAction $action The RuleAction object
 	 * @return  string The XML attributes string
 	 *
 	 */
@@ -3637,7 +3637,7 @@ class Simulator {
 	 * Converts a Connector or Condition object to XML strings and inserts it into an array of indented lines
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Model\Connector|\App\G6K\Model\Condition $connector The Connector or Condition object
+	 * @param   \Devntech\G6K\Model\Connector|\Devntech\G6K\Model\Condition $connector The Connector or Condition object
 	 * @param   string $indent The indentation spaces
 	 * @param   array &$xml array of indented lines
 	 * @return  void

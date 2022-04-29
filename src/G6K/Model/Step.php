@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a simulation step.
@@ -35,7 +35,7 @@ namespace App\G6K\Model;
 class Step {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object to which this step belongs
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object to which this step belongs
 	 *
 	 * @access  private
 	 *
@@ -83,7 +83,7 @@ class Step {
 	private $output = "";
 
 	/**
-	 * @var \App\G6K\Model\RichText|null     $description The description of this step 
+	 * @var \Devntech\G6K\Model\RichText|null     $description The description of this step 
 	 *
 	 * @access  private
 	 *
@@ -123,7 +123,7 @@ class Step {
 	private $actions = array();
 
 	/**
-	 * @var \App\G6K\Model\Footnotes $footnotes The foot notes container of this step 
+	 * @var \Devntech\G6K\Model\Footnotes $footnotes The foot notes container of this step 
 	 *
 	 * @access  private
 	 *
@@ -142,7 +142,7 @@ class Step {
 	 * Constructor of class Step
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object to which this step belongs   
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object to which this step belongs   
 	 * @param   int        $id The ID of this step 
 	 * @param   string     $name The name of this step 
 	 * @param   string     $label The label of this step 
@@ -162,7 +162,7 @@ class Step {
 	 * Returns the Simulator object to which this step belongs
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object
 	 *
 	 */
 	public function getSimulator() {
@@ -306,7 +306,7 @@ class Step {
 	 * Returns the description of this step
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText|null the The description of this step
+	 * @return  \Devntech\G6K\Model\RichText|null the The description of this step
 	 *
 	 */
 	public function getDescription() {
@@ -317,7 +317,7 @@ class Step {
 	 * Sets the description of this step
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $description The description of this step
+	 * @param   \Devntech\G6K\Model\RichText     $description The description of this step
 	 * @return  void
 	 *
 	 */
@@ -432,7 +432,7 @@ class Step {
 	 * Adds a Panel object to the list of panels of this step.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Panel $panel The Panel object
+	 * @param   \Devntech\G6K\Model\Panel $panel The Panel object
 	 * @return  void
 	 *
 	 */
@@ -457,7 +457,7 @@ class Step {
 	 *
 	 * @access  public
 	 * @param   int $id The ID of the panel
-	 * @return  \App\G6K\Model\Panel|null The Panel object
+	 * @return  \Devntech\G6K\Model\Panel|null The Panel object
 	 *
 	 */
 	public function getPanelById($id) {
@@ -509,7 +509,7 @@ class Step {
 	 * Adds an Action object to the list of action buttons of this step.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Action $action The Action object 
+	 * @param   \Devntech\G6K\Model\Action $action The Action object 
 	 * @return  void
 	 *
 	 */
@@ -534,7 +534,7 @@ class Step {
 	 *
 	 * @access  public
 	 * @param   string $name The name of the action button
-	 * @return  \App\G6K\Model\Action|null The Action object
+	 * @return  \Devntech\G6K\Model\Action|null The Action object
 	 *
 	 */
 	public function getActionByName($name) {
@@ -550,7 +550,7 @@ class Step {
 	 * Returns the footnotes container of this step 
 	 *
 	 * @access  public
-	 * @return   \App\G6K\Model\Footnotes The footnotes container
+	 * @return   \Devntech\G6K\Model\Footnotes The footnotes container
 	 *
 	 */
 	public function getFootNotes() {
@@ -561,7 +561,7 @@ class Step {
 	 * Sets the footnotes container of this step 
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Footnotes $footnotes The footnotes container
+	 * @param   \Devntech\G6K\Model\Footnotes $footnotes The footnotes container
 	 * @return  void
 	 *
 	 */

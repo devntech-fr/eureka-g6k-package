@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -48,7 +48,7 @@ namespace App\G6K\Model;
 class Condition {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this condition
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this condition
 	 *
 	 * @access  private
 	 *
@@ -56,7 +56,7 @@ class Condition {
 	private $simulator = null;
 
 	/**
-	 * @var \App\G6K\Model\Connector $connector The Connector object that combines this condition with others.
+	 * @var \Devntech\G6K\Model\Connector $connector The Connector object that combines this condition with others.
 	 *
 	 * @access  private
 	 *
@@ -91,8 +91,8 @@ class Condition {
 	 * Constructor of class Condition
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this condition.
-	 * @param   \App\G6K\Model\Connector $connector The Connector object that combines this condition with others.
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this condition.
+	 * @param   \Devntech\G6K\Model\Connector $connector The Connector object that combines this condition with others.
 	 * @param   string $operand The operand part (name of a data item) of this condition.
 	 * @param   string $operator The operator part of this condition.
 	 * @param   string $expression the arithmetic expression part of this condition.
@@ -111,7 +111,7 @@ class Condition {
 	 * Retrieves the Simulator object that has the business rule that uses this condition.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object
 	 *
 	 */
 	public function getSimulator() {
@@ -124,7 +124,7 @@ class Condition {
 	 * Returns null if this condition is not combined with others.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Connector|null The Connector object 
+	 * @return  \Devntech\G6K\Model\Connector|null The Connector object 
 	 *
 	 */
 	public function getConnector() {

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a source.
@@ -37,7 +37,7 @@ namespace App\G6K\Model;
 class Source {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that uses this source 
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this source 
 	 *
 	 * @access  private
 	 *
@@ -136,7 +136,7 @@ class Source {
 	 * Constructor of class Source
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator|null $simulator The Simulator object that uses this source
+	 * @param   \Devntech\G6K\Model\Simulator|null $simulator The Simulator object that uses this source
 	 * @param   int        $id The ID of this source
 	 * @param   string     $datasource The name of the data source accessed by this source
 	 * @param   string     $returnType  The type (format) or the result returned by the request
@@ -154,7 +154,7 @@ class Source {
 	 * Returns the Simulator object that uses this source
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object
 	 *
 	 */
 	public function getSimulator() {
@@ -469,7 +469,7 @@ class Source {
 	 * Adds a Parameter object to the list of parameters passed to the request of this source.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Parameter $parameter The Parameter object 
+	 * @param   \Devntech\G6K\Model\Parameter $parameter The Parameter object 
 	 * @return  void
 	 *
 	 */
@@ -494,7 +494,7 @@ class Source {
 	 *
 	 * @access  public
 	 * @param   string $name The name of the parameter 
-	 * @return  \App\G6K\Model\Parameter|null The Parameter object
+	 * @return  \Devntech\G6K\Model\Parameter|null The Parameter object
 	 *
 	 */
 	public function getParameterByName($name) {

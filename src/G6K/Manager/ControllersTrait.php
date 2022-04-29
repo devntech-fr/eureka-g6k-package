@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -33,19 +33,19 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\HttpFoundation\Request;
 
-use App\G6K\Model\Data;
-use App\G6K\Model\Source;
-use App\G6K\Model\Parameter;
-use App\G6K\Model\ChoiceGroup;
-use App\G6K\Model\Choice;
-use App\G6K\Model\ChoiceSource;
-use App\G6K\Model\RichText;
+use Devntech\G6K\Model\Data;
+use Devntech\G6K\Model\Source;
+use Devntech\G6K\Model\Parameter;
+use Devntech\G6K\Model\ChoiceGroup;
+use Devntech\G6K\Model\Choice;
+use Devntech\G6K\Model\ChoiceSource;
+use Devntech\G6K\Model\RichText;
 
-use App\G6K\Manager\DOMClient as Client;
-use App\G6K\Manager\ResultFilter;
-use App\G6K\Manager\StreamedOutput;
-use App\G6K\Manager\ExpressionParser\DateFunction;
-use App\G6K\Manager\ExpressionParser\NumberFunction;
+use Devntech\G6K\Manager\DOMClient as Client;
+use Devntech\G6K\Manager\ResultFilter;
+use Devntech\G6K\Manager\StreamedOutput;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\NumberFunction;
 
 /**
  *
@@ -180,7 +180,7 @@ trait ControllersTrait {
 	 * Formats a source parameter value
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Parameter $param The source parameter
+	 * @param   \Devntech\G6K\Model\Parameter $param The source parameter
 	 * @return  string|null The formatted value
 	 *
 	 */
@@ -240,8 +240,8 @@ trait ControllersTrait {
 	 * Returns the data source accessed by a source query
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Source $source The source
-	 * @return  \App\G6K\Model\DataSource The data source
+	 * @param   \Devntech\G6K\Model\Source $source The source
+	 * @return  \Devntech\G6K\Model\DataSource The data source
 	 *
 	 */
 	protected function getDatasource(Source $source) {
@@ -258,7 +258,7 @@ trait ControllersTrait {
 	 * Process a source query and returns the result of that query.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Source $source The source
+	 * @param   \Devntech\G6K\Model\Source $source The source
 	 * @return  mixed The result of the query.
 	 *
 	 */
@@ -435,7 +435,7 @@ trait ControllersTrait {
 	 * Populates the list of values of a data item of type choice from a data source.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Data &$data The data item of type choice
+	 * @param   \Devntech\G6K\Model\Data &$data The data item of type choice
 	 * @return  void
 	 *
 	 */
@@ -458,8 +458,8 @@ trait ControllersTrait {
 	 * Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Data &$data The data item of type choice
-	 * @param   \App\G6K\Model\ChoiceSource $choiceSource The given ChoiceSource object
+	 * @param   \Devntech\G6K\Model\Data &$data The data item of type choice
+	 * @param   \Devntech\G6K\Model\ChoiceSource $choiceSource The given ChoiceSource object
 	 * @return  void
 	 *
 	 */
@@ -552,8 +552,8 @@ trait ControllersTrait {
 	 * Replaces all data ID by their corresponding value into the given text.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $target The target text
-	 * @return  \App\G6K\Model\RichText|string The result text
+	 * @param   \Devntech\G6K\Model\RichText|string $target The target text
+	 * @return  \Devntech\G6K\Model\RichText|string The result text
 	 *
 	 */
 	public function replaceVariables($target) {
@@ -597,8 +597,8 @@ trait ControllersTrait {
 	 * Replaces all the html tag data containing the ID of a data item by # followed by the ID
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $target The target text
-	 * @return  \App\G6K\Model\RichText|string The result text
+	 * @param   \Devntech\G6K\Model\RichText|string $target The target text
+	 * @return  \Devntech\G6K\Model\RichText|string The result text
 	 *
 	 */
 	public function replaceDataTagByVariable($target) {
@@ -636,8 +636,8 @@ trait ControllersTrait {
 	 * Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $target The target text
-	 * @return  \App\G6K\Model\RichText|string The result text
+	 * @param   \Devntech\G6K\Model\RichText|string $target The target text
+	 * @return  \Devntech\G6K\Model\RichText|string The result text
 	 *
 	 */
 	public function replaceDfnTagByFootnote($target) {
@@ -777,7 +777,7 @@ trait ControllersTrait {
 	 *
 	 * @access  public
 	 * @param   int $id The ID of the data item.
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getDataById($id) {

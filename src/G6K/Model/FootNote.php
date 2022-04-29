@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -37,7 +37,7 @@ namespace App\G6K\Model;
 class FootNote {
 
 	/**
-	 * @var \App\G6K\Model\Step $step The Step object to which this footnote is attached
+	 * @var \Devntech\G6K\Model\Step $step The Step object to which this footnote is attached
 	 *
 	 * @access  private
 	 *
@@ -61,7 +61,7 @@ class FootNote {
 	private $displayable = true;
 
 	/**
-	 * @var \App\G6K\Model\RichText|null     $text The text of this footnote
+	 * @var \Devntech\G6K\Model\RichText|null     $text The text of this footnote
 	 *
 	 * @access  private
 	 *
@@ -72,7 +72,7 @@ class FootNote {
 	 * Constructor of class FootNote
 	 *
 	 * @access  public
-	 * @param    \App\G6K\Model\Step $step The Step object to which this footnote is attached
+	 * @param    \Devntech\G6K\Model\Step $step The Step object to which this footnote is attached
 	 * @param   int        $id The id of this footnote
 	 * @return  void
 	 *
@@ -86,7 +86,7 @@ class FootNote {
 	 * Returns the Step object to which this footnote is attached
 	 *
 	 * @access  public
-	 * @return   \App\G6K\Model\Step The Step object
+	 * @return   \Devntech\G6K\Model\Step The Step object
 	 *
 	 */
 	public function getStep() {
@@ -154,7 +154,7 @@ class FootNote {
 	 * Returns the text of this footnote
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText|null the The text of this footnote
+	 * @return  \Devntech\G6K\Model\RichText|null the The text of this footnote
 	 *
 	 */
 	public function getText() {
@@ -165,7 +165,7 @@ class FootNote {
 	 * Sets the text of this footnote
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText $text The text of this footnote
+	 * @param   \Devntech\G6K\Model\RichText $text The text of this footnote
 	 * @return  void
 	 *
 	 */

@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Delimited;
+namespace Devntech\G6K\Manager\Delimited;
 
-use App\G6K\Manager\SQLConverterBase;
+use Devntech\G6K\Manager\SQLConverterBase;
 
 /**
  * This class allows the conversion of a json-schema.org compliant JSON database and exported from G6K to a SQL database

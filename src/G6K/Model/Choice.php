@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -39,7 +39,7 @@ namespace App\G6K\Model;
 class Choice {
 
 	/**
-	 * @var \App\G6K\Model\Data $data The Data object that uses this choice
+	 * @var \Devntech\G6K\Model\Data $data The Data object that uses this choice
 	 *
 	 * @access  private
 	 *
@@ -82,7 +82,7 @@ class Choice {
 	 * Constructor of class Choice
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Data $data The Data object that uses this choice
+	 * @param   \Devntech\G6K\Model\Data $data The Data object that uses this choice
 	 * @param   int      $id The ID of this choice
 	 * @param   string     $value The value of this choice
 	 * @param   string     $label The label of this choice
@@ -123,7 +123,7 @@ class Choice {
 	 * Retrieves the Data object that uses this choice
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Data the Data object
+	 * @return  \Devntech\G6K\Model\Data the Data object
 	 *
 	 */
 	public function getData() {

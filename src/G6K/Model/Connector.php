@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -45,7 +45,7 @@ namespace App\G6K\Model;
 class Connector {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this connector
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this connector
 	 *
 	 * @access  private
 	 *
@@ -72,7 +72,7 @@ class Connector {
 	 * Constructor of class Connector
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this connector
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that has the business rule that uses this connector
 	 * @param   string     $type  The type of connector among "all", "any" or "none"
 	 * @return  void
 	 *
@@ -86,7 +86,7 @@ class Connector {
 	 * Retrieves the Simulator object that has the business rule that uses this connector
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object 
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object 
 	 *
 	 */
 	public function getSimulator() {
@@ -143,7 +143,7 @@ class Connector {
 	 * Adds a Condition object or Connector object to the list of objects inside this connector.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Condition|\App\G6K\Model\Connector $condition A Condition object or a Connector object  
+	 * @param   \Devntech\G6K\Model\Condition|\Devntech\G6K\Model\Connector $condition A Condition object or a Connector object  
 	 * @return  void
 	 *
 	 */
@@ -170,7 +170,7 @@ class Connector {
 	 *
 	 * @access  public
 	 * @param   int $index The position of the Condition object or the Connector object in the array.
-	 * @return  \App\G6K\Model\Condition|\App\G6K\Model\Connector|null The Condition object or Connector object
+	 * @return  \Devntech\G6K\Model\Condition|\Devntech\G6K\Model\Connector|null The Condition object or Connector object
 	 *
 	 */
 	public function getCondition($index) {

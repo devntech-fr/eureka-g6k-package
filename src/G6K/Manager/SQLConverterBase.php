@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
-use App\G6K\Manager\DatasourcesTrait;
-use App\G6K\Model\Database;
+use Devntech\G6K\Manager\DatasourcesTrait;
+use Devntech\G6K\Model\Database;
 
 /**
  * Base class for concrete classes that convert input files of a particular format into SQL database
@@ -72,7 +72,7 @@ abstract class SQLConverterBase {
 	protected $datasources;
 
 	/**
-	 * @var \App\G6K\Model\Database      $database The Database object
+	 * @var \Devntech\G6K\Model\Database      $database The Database object
 	 *
 	 * @access  protected
 	 *

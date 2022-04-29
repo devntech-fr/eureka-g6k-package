@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -50,7 +50,7 @@ class DataGroup extends DatasetChild {
 	 * Constructor of class DataGroup
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that uses this data group 
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this data group 
 	 * @param   int $id The ID of this data group
 	 * @param   string $name The name of this data group
 	 * @return  void
@@ -87,7 +87,7 @@ class DataGroup extends DatasetChild {
 	 * Adds a data to the list of data item of this data group.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Data $data The Data object to add
+	 * @param   \Devntech\G6K\Model\Data $data The Data object to add
 	 * @return  void
 	 *
 	 */
@@ -112,7 +112,7 @@ class DataGroup extends DatasetChild {
 	 *
 	 * @access  public
 	 * @param   int $id The data id 
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getDataById($id) {
@@ -129,7 +129,7 @@ class DataGroup extends DatasetChild {
 	 *
 	 * @access  public
 	 * @param   string $name The data name 
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getDataByName($name) {

@@ -24,13 +24,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Command;
+namespace Devntech\G6K\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Helper\ProgressBar;
-use App\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Manager\DatasourcesHelper;
 
 /**
  * Imports a datasource from an exported json file.

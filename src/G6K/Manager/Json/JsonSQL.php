@@ -24,12 +24,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json;
+namespace Devntech\G6K\Manager\Json;
 
-use App\G6K\Manager\Json\JsonSQL\Parser;
-use App\G6K\Manager\Json\JsonSQL\Engine;
-use App\G6K\Manager\Json\JsonSQL\Statement;
-use App\G6K\Manager\Json\JsonSQL\JsonSQLException;
+use Devntech\G6K\Manager\Json\JsonSQL\Parser;
+use Devntech\G6K\Manager\Json\JsonSQL\Engine;
+use Devntech\G6K\Manager\Json\JsonSQL\Statement;
+use Devntech\G6K\Manager\Json\JsonSQL\JsonSQLException;
 
 /**
  * This class allows you  to store and retrieve data from files in JSON format using SQL standard.
@@ -58,7 +58,7 @@ class JsonSQL  {
 	/**
 	 * The JsonSQL engine attached to this instance 
 	 *
-	 * @var \App\G6K\Manager\Json\JsonSQL\Engine
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL\Engine
 	 * @access private
 	 */
 	private $engine = null;
@@ -81,7 +81,7 @@ class JsonSQL  {
 	 * @see JsonSQL::create()
 	 * @param string $name The name of json database (without the file extension)
 	 * @param boolean $create if true, creates the database if it doesn't exists
-	 * @return \App\G6K\Manager\Json\JsonSQL The JsonSQL instance
+	 * @return \Devntech\G6K\Manager\Json\JsonSQL The JsonSQL instance
 	 */
 	public static function open($name, $create = false) {
 		if(!isset(self::$_instance[$name])) {
@@ -98,7 +98,7 @@ class JsonSQL  {
 	 * @access public
 	 * @static
 	 * @param string $name The name of json database (without the file extension)
-	 * @return \App\G6K\Manager\Json\JsonSQL The JsonSQL instance
+	 * @return \Devntech\G6K\Manager\Json\JsonSQL The JsonSQL instance
 	 * @throws JsonSQLException
 	 */
 	public static function create($name) {
@@ -112,7 +112,7 @@ class JsonSQL  {
 	 * Returns the JsonSQL engine attached to this instance 
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Manager\Json\JsonSQL\Engine The JsonSQL engine
+	 * @return  \Devntech\G6K\Manager\Json\JsonSQL\Engine The JsonSQL engine
 	 *
 	 */
 	public function getEngine() {
@@ -145,7 +145,7 @@ class JsonSQL  {
 	 *
 	 * @access public
 	 * @param string $sql a valid SQL statement 
-	 * @return  \App\G6K\Manager\Json\JsonSQL\Statement a Statement instance
+	 * @return  \Devntech\G6K\Manager\Json\JsonSQL\Statement a Statement instance
 	 */
 	public function prepare($sql) {
 		if (extension_loaded('apc') && ini_get('apc.enabled')) {
@@ -163,7 +163,7 @@ class JsonSQL  {
 	 *
 	 * @access public
 	 * @param string $sql a valid SQL statement to prepare and execute.
-	 * @return \App\G6K\Manager\Json\JsonSQL\Statement a Statement instance
+	 * @return \Devntech\G6K\Manager\Json\JsonSQL\Statement a Statement instance
 	 */
 	public function query($sql) {
 		$statement = $this->prepare($sql);

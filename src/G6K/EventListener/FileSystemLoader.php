@@ -1,6 +1,6 @@
 <?php
 
-namespace App\G6K\EventListener;
+namespace Devntech\G6K\EventListener;
 
 use Twig\Loader\FilesystemLoader as TwigLoaderFilesystem;
 

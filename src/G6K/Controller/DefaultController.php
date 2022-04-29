@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
-use App\G6K\Model\DataGroup;
-use App\G6K\Model\Data;
-use App\G6K\Model\Step;
+use Devntech\G6K\Model\DataGroup;
+use Devntech\G6K\Model\Data;
+use Devntech\G6K\Model\Step;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Cookie;
@@ -193,7 +193,7 @@ class DefaultController extends BaseController {
 	 *
 	 * @access  protected
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The request
-	 * @param   \App\G6K\Model\Step &$step <parameter description>
+	 * @param   \Devntech\G6K\Model\Step &$step <parameter description>
 	 * @param   array &$datas <parameter description>
 	 * @param   string $view The view name
 	 * @return \Symfony\Component\HttpFoundation\Response
@@ -257,7 +257,7 @@ class DefaultController extends BaseController {
 	 *
 	 * @access  protected
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The request
-	 * @param   \App\G6K\Model\Step $step <parameter description>
+	 * @param   \Devntech\G6K\Model\Step $step <parameter description>
 	 * @param   array $datas <parameter description>
 	 * @param   string $view (default: "Default") The view name
 	 * @return  bool Always false
@@ -305,7 +305,7 @@ class DefaultController extends BaseController {
 	 *
 	 * @access  protected
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The request
-	 * @param   \App\G6K\Model\Step $step <parameter description>
+	 * @param   \Devntech\G6K\Model\Step $step <parameter description>
 	 * @param   array $datas <parameter description>
 	 * @return  bool Always false
 	 *

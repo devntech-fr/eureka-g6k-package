@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
-use App\G6K\Manager\Splitter;
-use App\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Splitter;
+use Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  *
@@ -40,7 +40,7 @@ use App\G6K\Manager\Json\JsonSQL;
 class Database {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that uses this database 
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this database 
 	 *
 	 * @access  private
 	 *
@@ -128,7 +128,7 @@ class Database {
 	private $connected = false;
 
 	/**
-	 * @var \PDO|\App\G6K\Manager\Json\JsonSQL $link link to the connection
+	 * @var \PDO|\Devntech\G6K\Manager\Json\JsonSQL $link link to the connection
 	 *
 	 * @access  private
 	 *
@@ -179,7 +179,7 @@ class Database {
 	 * Constructor of class Database
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator|null $simulator The Simulator object that uses this database 
+	 * @param   \Devntech\G6K\Model\Simulator|null $simulator The Simulator object that uses this database 
 	 * @param   string|null $databasesDir The "databases" directory, specially for SQLite.
 	 * @param   int         $id The ID of the database
 	 * @param   string      $type The type of the database
@@ -199,7 +199,7 @@ class Database {
 	 * Returns the Simulator object that uses this database
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object 
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object 
 	 *
 	 */
 	public function getSimulator() {
@@ -405,7 +405,7 @@ class Database {
 	 * Returns the instance representing a connection to this database
 	 *
 	 * @access  public
-	 * @return  \PDO|\App\G6K\Manager\Json\JsonSQL The instance
+	 * @return  \PDO|\Devntech\G6K\Manager\Json\JsonSQL The instance
 	 *
 	 */
 	public function getConnection() {
@@ -543,7 +543,7 @@ class Database {
 	 *
 	 * @access  public
 	 * @param   string  $sql The SQL Statement
-	 * @return  \PDOStatement|\App\G6K\Manager\Json\JsonSQL\Statement The statement object
+	 * @return  \PDOStatement|\Devntech\G6K\Manager\Json\JsonSQL\Statement The statement object
 	 *
 	 */
 	public function prepare($sql) {

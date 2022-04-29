@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -35,7 +35,7 @@ namespace App\G6K\Model;
 class Action {
 
 	/**
-	 * @var \App\G6K\Model\Step $step Step that defines this action button 
+	 * @var \Devntech\G6K\Model\Step $step Step that defines this action button 
 	 *
 	 * @access  private
 	 *
@@ -119,7 +119,7 @@ class Action {
 	 * Constructor of class Action
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Step $step Step that defines this action button  
+	 * @param   \Devntech\G6K\Model\Step $step Step that defines this action button  
 	 * @param   string $name Button name without spaces or special or accented characters
 	 * @param   string $label Button label 
 	 * @return  void
@@ -135,7 +135,7 @@ class Action {
 	 * Returns the step that defines this action button
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Step step
+	 * @return  \Devntech\G6K\Model\Step step
 	 *
 	 */
 	public function getStep() {

@@ -24,14 +24,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Command;
+namespace Devntech\G6K\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Helper\ProgressBar;
-use App\G6K\Manager\Delimited\DelimitedToSQLConverter;
+use Devntech\G6K\Manager\Delimited\DelimitedToSQLConverter;
 
 /**
  * Imports a datasource table from an delimited text file.

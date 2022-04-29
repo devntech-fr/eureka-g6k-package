@@ -24,17 +24,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
-use App\G6K\Model\DatasetChild;
-use App\G6K\Model\DataGroup;
-use App\G6K\Model\Data;
-use App\G6K\Model\FieldSet;
-use App\G6K\Model\FieldRow;
-use App\G6K\Model\Field;
-use App\G6K\Model\Step;
+use Devntech\G6K\Model\DatasetChild;
+use Devntech\G6K\Model\DataGroup;
+use Devntech\G6K\Model\Data;
+use Devntech\G6K\Model\FieldSet;
+use Devntech\G6K\Model\FieldRow;
+use Devntech\G6K\Model\Field;
+use Devntech\G6K\Model\Step;
 
-use App\G6K\Manager\ControllersTrait;
+use Devntech\G6K\Manager\ControllersTrait;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -91,7 +91,7 @@ class APIController extends BaseController {
 	 * @access  public
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The user request
 	 * @param   string $simu The simulator name
-	 * @return  \Symfony\Component\HttpFoundation\Response|\App\G6K\Model\Step The simulation step object or the API response object in JSON format
+	 * @return  \Symfony\Component\HttpFoundation\Response|\Devntech\G6K\Model\Step The simulation step object or the API response object in JSON format
 	 *
 	 */
 	public function calcul(Request $request, $simu)
@@ -105,7 +105,7 @@ class APIController extends BaseController {
 	 * @access  public
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The user request
 	 * @param   string $simu The simulator name
-	 * @return  \Symfony\Component\HttpFoundation\Response|\App\G6K\Model\Step The simulation step object or the API response object in JSON format
+	 * @return  \Symfony\Component\HttpFoundation\Response|\Devntech\G6K\Model\Step The simulation step object or the API response object in JSON format
 	 *
 	 */
 	public function tryIt(Request $request, $simu)
@@ -120,7 +120,7 @@ class APIController extends BaseController {
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The user request
 	 * @param   string $simu The simulator name
 	 * @param   bool $test (default: false) if true, we are in test mode
-	 * @return  \Symfony\Component\HttpFoundation\Response|\App\G6K\Model\Step The simulation step object or the API response object in JSON format
+	 * @return  \Symfony\Component\HttpFoundation\Response|\Devntech\G6K\Model\Step The simulation step object or the API response object in JSON format
 	 *
 	 */
 	protected function runCalcul(Request $request, $simu, $test = false)
@@ -153,7 +153,7 @@ class APIController extends BaseController {
 	 * @access  protected
 	 * @param   \Symfony\Component\HttpFoundation\Request $request The user request
 	 * @param   array $form array of request parameters
-	 * @param   \App\G6K\Model\Step $step The simulation step object
+	 * @param   \Devntech\G6K\Model\Step $step The simulation step object
 	 * @return  \Symfony\Component\HttpFoundation\Response The API response object in JSON format
 	 *
 	 */
@@ -282,7 +282,7 @@ class APIController extends BaseController {
 	 *
 	 * @access  private
 	 * @param   array $form array of request parameters
-	 * @param   \App\G6K\Model\Field $field The field object
+	 * @param   \Devntech\G6K\Model\Field $field The field object
 	 * @return  void
 	 *
 	 */
@@ -308,7 +308,7 @@ class APIController extends BaseController {
 	 *
 	 * @access  private
 	 * @param   array $form array of request parameters
-	 * @param   \App\G6K\Model\Data $data The data object
+	 * @param   \Devntech\G6K\Model\Data $data The data object
 	 * @return  void
 	 *
 	 */
@@ -325,7 +325,7 @@ class APIController extends BaseController {
 	 *
 	 * @access  private
 	 * @param   array $form array of request parameters
-	 * @param   \App\G6K\Model\DatasetChild $data The data object
+	 * @param   \Devntech\G6K\Model\DatasetChild $data The data object
 	 * @return  void
 	 *
 	 */

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\G6K\Services;
+namespace Devntech\G6K\Services;
 
 use Symfony\Component\Asset\VersionStrategy\VersionStrategyInterface;
 

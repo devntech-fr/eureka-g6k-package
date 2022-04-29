@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  * This class allows you  to store and retrieve data from files in JSON format using SQL standard.
@@ -90,7 +90,7 @@ abstract class Parser  {
 	/**
 	 * A pointer on  the JsonSQL owner.
 	 *
-	 * @var \App\G6K\Manager\Json\JsonSQL The JsonSQL instance
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL The JsonSQL instance
 	 * @access protected
 	 */
 	protected $jsonsql = null;
@@ -98,7 +98,7 @@ abstract class Parser  {
 	/**
 	 * A pointer on JSON database engine.
 	 *
-	 * @var \App\G6K\Manager\Json\JsonSQL\Engine $engine The JsonSQL engine
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The JsonSQL engine
 	 * @access protected
 	 */
 	protected $engine = null;
@@ -115,7 +115,7 @@ abstract class Parser  {
 	 * Constructor of class Parser
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
+	 * @param   \Devntech\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
 	 * @param   string $sql The sql request
 	 * @return  void
 	 *
@@ -132,7 +132,7 @@ abstract class Parser  {
 	 * @access protected
 	 * @static
 	 * @param string $sql The sql statement
-	 * @return \App\G6K\Manager\Json\JsonSQL\Parser The parsed request
+	 * @return \Devntech\G6K\Manager\Json\JsonSQL\Parser The parsed request
 	 * @throws JsonSQLException
 	 */
 	public static function create(JsonSQL $jsonsql, $sql) {

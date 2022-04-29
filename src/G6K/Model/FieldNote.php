@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -36,7 +36,7 @@ namespace App\G6K\Model;
 class FieldNote {
 
 	/**
-	 * @var \App\G6K\Model\Field $field The Field object to which this note is attached
+	 * @var \Devntech\G6K\Model\Field $field The Field object to which this note is attached
 	 *
 	 * @access  private
 	 *
@@ -52,7 +52,7 @@ class FieldNote {
 	private $displayable = true;
 
 	/**
-	 * @var \App\G6K\Model\RichText $text The text of this note
+	 * @var \Devntech\G6K\Model\RichText $text The text of this note
 	 *
 	 * @access  private
 	 *
@@ -63,7 +63,7 @@ class FieldNote {
 	 * Constructor of class FieldNote
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Field $field  The Field object to which this note is attached
+	 * @param   \Devntech\G6K\Model\Field $field  The Field object to which this note is attached
 	 * @return  void
 	 *
 	 */
@@ -75,7 +75,7 @@ class FieldNote {
 	 * Returns the Field object to which this note is attached
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Field The Field object
+	 * @return  \Devntech\G6K\Model\Field The Field object
 	 *
 	 */
 	public function getField() {
@@ -120,7 +120,7 @@ class FieldNote {
 	 * Returns the text of this note
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The text of this note
+	 * @return  \Devntech\G6K\Model\RichText The text of this note
 	 *
 	 */
 	public function getText() {
@@ -131,7 +131,7 @@ class FieldNote {
 	 * Sets the text of this note
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText $text  The text of this note
+	 * @param   \Devntech\G6K\Model\RichText $text  The text of this note
 	 * @return  void
 	 *
 	 */

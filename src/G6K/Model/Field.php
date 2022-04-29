@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -40,7 +40,7 @@ namespace App\G6K\Model;
 class Field {
 
 	/**
-	 * @var \App\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field
+	 * @var \Devntech\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field
 	 *
 	 * @access  private
 	 *
@@ -168,7 +168,7 @@ class Field {
 	private $expanded = true;
 
 	/**
-	 * @var \App\G6K\Model\FieldNote $preNote A note associated with this field that should be displayed above the field.
+	 * @var \Devntech\G6K\Model\FieldNote $preNote A note associated with this field that should be displayed above the field.
 	 *
 	 * @access  private
 	 *
@@ -176,7 +176,7 @@ class Field {
 	private $preNote = null;
 
 	/**
-	 * @var \App\G6K\Model\FieldNote $postNote A note associated with this field that should be displayed below the field.
+	 * @var \Devntech\G6K\Model\FieldNote $postNote A note associated with this field that should be displayed below the field.
 	 *
 	 * @access  private
 	 *
@@ -195,7 +195,7 @@ class Field {
 	 * Constructor of class Field
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field.
+	 * @param   \Devntech\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field.
 	 * @param   int        $position  The position of this field in the field set.
 	 * @param   int        $data The ID of the data item displayed or fed by this field.
 	 * @param   string     $label The label of this field.
@@ -213,7 +213,7 @@ class Field {
 	 * Returns the FieldSet object that contains this field
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\FieldSet  The FieldSet object
+	 * @return  \Devntech\G6K\Model\FieldSet  The FieldSet object
 	 *
 	 */
 	public function getFieldSet() {
@@ -703,7 +703,7 @@ class Field {
 	 * Returns the note associated with this field that is displayed above the field.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\FieldNote The note displayed above this field
+	 * @return  \Devntech\G6K\Model\FieldNote The note displayed above this field
 	 *
 	 */
 	public function getPreNote() {
@@ -714,7 +714,7 @@ class Field {
 	 * Sets the note associated with this field that should be displayed above the field.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FieldNote $preNote The note that should be displayed above this field
+	 * @param   \Devntech\G6K\Model\FieldNote $preNote The note that should be displayed above this field
 	 * @return  void
 	 *
 	 */
@@ -726,7 +726,7 @@ class Field {
 	 * Returns the note associated with this field that is displayed below the field.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\FieldNote The note displayed below this field
+	 * @return  \Devntech\G6K\Model\FieldNote The note displayed below this field
 	 *
 	 */
 	public function getPostNote() {
@@ -737,7 +737,7 @@ class Field {
 	 * Sets the note associated with this field that should be displayed below the field.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FieldNote $postNote The note that should be displayed below this field
+	 * @param   \Devntech\G6K\Model\FieldNote $postNote The note that should be displayed below this field
 	 * @return  void
 	 *
 	 */

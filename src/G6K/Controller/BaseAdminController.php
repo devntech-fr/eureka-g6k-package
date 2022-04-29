@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
-use App\G6K\Services\Deployer;
-use App\G6K\Services\FileUploader;
+use Devntech\G6K\Services\Deployer;
+use Devntech\G6K\Services\FileUploader;
 use App\Security\UserManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

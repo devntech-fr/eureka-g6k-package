@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -55,7 +55,7 @@ class ChoiceGroup {
 	private $choices = array(); 
 
 	/**
-	 * @var \App\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object that contains the columns of the result of the query that populate this group of choices.
+	 * @var \Devntech\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object that contains the columns of the result of the query that populate this group of choices.
 	 *
 	 * @access  private
 	 *
@@ -124,7 +124,7 @@ class ChoiceGroup {
 	 * Adds a Choice object to the list of choices
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Choice $choice The Choice object to add
+	 * @param   \Devntech\G6K\Model\Choice $choice The Choice object to add
 	 * @return  void
 	 *
 	 */
@@ -137,7 +137,7 @@ class ChoiceGroup {
 	 *
 	 * @access  public
 	 * @param   int $id The ID of the choice 
-	 * @return  \App\G6K\Model\Choice|null The Choice object with this ID
+	 * @return  \Devntech\G6K\Model\Choice|null The Choice object with this ID
 	 *
 	 */
 	public function getChoiceById($id) {
@@ -155,7 +155,7 @@ class ChoiceGroup {
 	 * The ChoiceSource object contains the columns of the result of the query that populate this group of choices.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\ChoiceSource The ChoiceSource object
+	 * @return  \Devntech\G6K\Model\ChoiceSource The ChoiceSource object
 	 *
 	 */
 	public function getChoiceSource() {
@@ -168,7 +168,7 @@ class ChoiceGroup {
 	 * The ChoiceSource object contains the columns of the result of the query that populate this group of choices.
 	 *
 	 * @access  public
-	 * @param  \App\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object
+	 * @param  \Devntech\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object
 	 * @return  void
 	 *
 	 */

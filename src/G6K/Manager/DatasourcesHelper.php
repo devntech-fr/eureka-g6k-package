@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
  
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
-use App\G6K\Model\Database;
-use App\G6K\Manager\DatasourcesHelper;
-use App\G6K\Manager\Json\JSONToSQLConverter;
+use Devntech\G6K\Model\Database;
+use Devntech\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Manager\Json\JSONToSQLConverter;
 
 /**
  *
@@ -213,7 +213,7 @@ class DatasourcesHelper {
 	 * @param   int $dbid The database id in DataSources.xml
 	 * @param   string $databasesDir The databases directory
 	 * @param   bool $withDbName (default: true)  if false the database name is not inserted into the dsn string
-	 * @return  \App\G6K\Model\Database The Database object of the databae interface.
+	 * @return  \Devntech\G6K\Model\Database The Database object of the databae interface.
 	 *
 	 */
 	public function getDatabase($parameters, $dbid, $databasesDir, $withDbName = true) {

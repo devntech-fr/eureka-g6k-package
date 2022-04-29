@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Command;
+namespace Devntech\G6K\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -33,8 +33,8 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Console\Helper\ProgressBar;
 
-use App\G6K\Manager\DatasourcesHelper;
-use App\G6K\Manager\DatasourcesTrait;
+use Devntech\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Manager\DatasourcesTrait;
 
 /**
  * Copies one or all data sources from another instance of G6K.

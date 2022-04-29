@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -43,7 +43,7 @@ namespace App\G6K\Model;
 class FieldSet {
 
 	/**
-	 * @var \App\G6K\Model\Panel $panel  The Panel object that contains this field set
+	 * @var \Devntech\G6K\Model\Panel $panel  The Panel object that contains this field set
 	 *
 	 * @access  private
 	 *
@@ -59,7 +59,7 @@ class FieldSet {
 	private $id = 0;
 
 	/**
-	 * @var \App\G6K\Model\RichText     $legend The legend of this field set.
+	 * @var \Devntech\G6K\Model\RichText     $legend The legend of this field set.
 	 *
 	 * @access  private
 	 *
@@ -134,7 +134,7 @@ class FieldSet {
 	 * Constructor of class FieldSet
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Panel $panel  The Panel object that contains this field set
+	 * @param   \Devntech\G6K\Model\Panel $panel  The Panel object that contains this field set
 	 * @param   int        $id  The ID of this field set.
 	 * @return  void
 	 *
@@ -148,7 +148,7 @@ class FieldSet {
 	 * Returns the Panel object that contains this field set
 	 *
 	 * @access  public
-	 * @return   \App\G6K\Model\Panel The Panel object 
+	 * @return   \Devntech\G6K\Model\Panel The Panel object 
 	 *
 	 */
 	public function getPanel() {
@@ -182,7 +182,7 @@ class FieldSet {
 	 * Returns the legend of this field set
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The legend of this field set
+	 * @return  \Devntech\G6K\Model\RichText The legend of this field set
 	 *
 	 */
 	public function getLegend() {
@@ -193,7 +193,7 @@ class FieldSet {
 	 * Sets the legend of this field set
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $legend The legend of this field set
+	 * @param   \Devntech\G6K\Model\RichText     $legend The legend of this field set
 	 * @return  void
 	 *
 	 */
@@ -425,7 +425,7 @@ class FieldSet {
 	 * Adds a Field or FieldRow object in the list of fields of this field set.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Field|\App\G6K\Model\FieldRow $field The Field or FieldRow Object to be added
+	 * @param   \Devntech\G6K\Model\Field|\Devntech\G6K\Model\FieldRow $field The Field or FieldRow Object to be added
 	 * @return  void
 	 *
 	 */
@@ -450,7 +450,7 @@ class FieldSet {
 	 *
 	 * @access  public
 	 * @param   int $position The position of the field
-	 * @return  \App\G6K\Model\Field|null the Field object
+	 * @return  \Devntech\G6K\Model\Field|null the Field object
 	 *
 	 */
 	public function getFieldByPosition($position) {
@@ -467,7 +467,7 @@ class FieldSet {
 	 *
 	 * @access  public
 	 * @param   int $id The field row id
-	 * @return  \App\G6K\Model\FieldRow|null The FieldRow object
+	 * @return  \Devntech\G6K\Model\FieldRow|null The FieldRow object
 	 *
 	 */
 	public function getFieldRowById($id) {
@@ -506,7 +506,7 @@ class FieldSet {
 	 * Adds a Column object in the list of columns (header of a grid) in this field set.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Column $column The Column object 
+	 * @param   \Devntech\G6K\Model\Column $column The Column object 
 	 * @return  void
 	 *
 	 */
@@ -531,7 +531,7 @@ class FieldSet {
 	 *
 	 * @access  public
 	 * @param   int $id The column id
-	 * @return  \App\G6K\Model\Column|null The Column object
+	 * @return  \Devntech\G6K\Model\Column|null The Column object
 	 *
 	 */
 	public function getColumnById($id) {

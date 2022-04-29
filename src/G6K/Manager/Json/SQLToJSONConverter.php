@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json;
+namespace Devntech\G6K\Manager\Json;
 
-use App\G6K\Manager\DatasourcesHelper;
-use App\G6K\Model\Database;
+use Devntech\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Model\Database;
 
 /**
  *
@@ -293,7 +293,7 @@ class SQLToJSONConverter {
 	 * @access  protected
 	 * @param   \SimpleXMLElement $datasource The datasource definition extracted from DataSources.xml
 	 * @param   bool $withDbName (default: true) if false, the name of the database will not be inserted in the dsn string.
-	 * @return  \App\G6K\Model\Database The Database object
+	 * @return  \Devntech\G6K\Model\Database The Database object
 	 *
 	 */
 	protected function getDatabase($datasource, $withDbName = true) {
@@ -306,7 +306,7 @@ class SQLToJSONConverter {
 	 * Returns the information on a table
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Database $database The unified access interface to the database
+	 * @param   \Devntech\G6K\Model\Database $database The unified access interface to the database
 	 * @param   string $table The name of the table
 	 * @return  array|string|bool|null The information on the table
 	 *
@@ -341,7 +341,7 @@ class SQLToJSONConverter {
 	 * Returns all the rows of a table of a SQL database
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Database $database The unified access interface to the database
+	 * @param   \Devntech\G6K\Model\Database $database The unified access interface to the database
 	 * @param   string $table The name of the table
 	 * @param   array &$schema The list of columns in the table and their properties
 	 * @param   array &$required The list of required columns

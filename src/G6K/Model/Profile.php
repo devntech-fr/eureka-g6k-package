@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a profile.
@@ -62,7 +62,7 @@ class Profile {
 	private $label = "";
 
 	/**
-	 * @var \App\G6K\Model\RichText     $description The description of this profile. 
+	 * @var \Devntech\G6K\Model\RichText     $description The description of this profile. 
 	 *
 	 * @access  private
 	 *
@@ -164,7 +164,7 @@ class Profile {
 	 * Returns the description of this profile.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The description of this profile.
+	 * @return  \Devntech\G6K\Model\RichText The description of this profile.
 	 *
 	 */
 	public function getDescription() {
@@ -175,7 +175,7 @@ class Profile {
 	 * Sets the description of this profile.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $description The description of this profile.
+	 * @param   \Devntech\G6K\Model\RichText     $description The description of this profile.
 	 * @return  void
 	 *
 	 */

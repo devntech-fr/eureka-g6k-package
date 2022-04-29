@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 use Symfony\Component\BrowserKit\AbstractBrowser as BaseClient;
 use Symfony\Component\BrowserKit\Response;
@@ -108,7 +108,7 @@ class DOMClient extends BaseClient {
 	 * @access  public
 	 * @static 
 	 * @param   array $server (default: array() The server parameters
-	 * @return  \App\G6K\Manager\DOMClient The instance of this class
+	 * @return  \Devntech\G6K\Manager\DOMClient The instance of this class
 	 *
 	 */
 	public static function createClient($server = array()) {

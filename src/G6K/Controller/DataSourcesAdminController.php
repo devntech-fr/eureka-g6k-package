@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
@@ -34,12 +34,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-use App\G6K\Manager\ControllersTrait;
-use App\G6K\Manager\DatasourcesHelper;
-use App\G6K\Manager\DatasourcesTrait;
-use App\G6K\Manager\Json\SQLToJSONConverter;
-use App\G6K\Manager\Json\JsonSQL\Parser;
-use App\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ControllersTrait;
+use Devntech\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Manager\DatasourcesTrait;
+use Devntech\G6K\Manager\Json\SQLToJSONConverter;
+use Devntech\G6K\Manager\Json\JsonSQL\Parser;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
 
 /**
  *
@@ -825,7 +825,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @param   array $form The form fields
 	 * @param   int $dsid The datasource ID
 	 * @param   string|null $table The table name
-	 * @param   \App\G6K\Model\Database $database The database object
+	 * @param   \Devntech\G6K\Model\Database $database The database object
 	 * @return  \Symfony\Component\HttpFoundation\StreamedResponse
 	 * @throws \Exception
 	 *
@@ -926,7 +926,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   int $dsid The datasource ID
 	 * @param   string $dbtype The target database type
-	 * @param   \App\G6K\Model\Database $fromDatabase The origin Database object
+	 * @param   \Devntech\G6K\Model\Database $fromDatabase The origin Database object
 	 * @return  string|true
 	 *
 	 */
@@ -952,7 +952,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $form The form fields
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  string|true
 	 *
 	 */
@@ -966,7 +966,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  string|true
 	 *
 	 */
@@ -980,7 +980,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   bool $restore (default: false) true if the row is to be restored, false otherwise
 	 * @return  string|bool
 	 *
@@ -996,7 +996,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  bool|string
 	 *
 	 */
@@ -1010,7 +1010,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  string|true
 	 *
 	 */
@@ -1023,7 +1023,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  string|true
 	 *
 	 */
@@ -1038,7 +1038,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $form The form fields
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\RedirectResponse
 	 *
 	 */
@@ -1100,7 +1100,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\Response
 	 *
 	 */
@@ -1126,7 +1126,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\Response
 	 *
 	 */
@@ -1148,7 +1148,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\Response
 	 *
 	 */
@@ -1173,7 +1173,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\Response
 	 *
 	 */
@@ -1198,7 +1198,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\RedirectResponse
 	 *
 	 */
@@ -1318,7 +1318,7 @@ class DataSourcesAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  \Symfony\Component\HttpFoundation\RedirectResponse
 	 *
 	 */

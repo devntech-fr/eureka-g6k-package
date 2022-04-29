@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\ExpressionParser;
+namespace Devntech\G6K\Manager\ExpressionParser;
 
 /**
  *
@@ -50,7 +50,7 @@ class Evaluator {
 	 *
 	 * @access  public
 	 * @param   array &$tokens The postfixed expression
-	 * @return  \App\G6K\Manager\ExpressionParser\Token|false The result token of the evaluation
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token|false The result token of the evaluation
 	 * @throws \Exception
 	 *
 	 */
@@ -94,9 +94,9 @@ class Evaluator {
 	 * Realizes an unary, binary or ternary operation and returns the result token.
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $op The operator token
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $op The operator token
 	 * @param   array &$args The arguments of the operation
-	 * @return  \App\G6K\Manager\ExpressionParser\Token The result token of the operation
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token The result token of the operation
 	 * @throws \Exception
 	 *
 	 */
@@ -186,9 +186,9 @@ class Evaluator {
 	 * Compares two arguments with a comparison operator and returns the result token.
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $op The comparison operator token
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $op The comparison operator token
 	 * @param   array &$args The arguments of the comparison
-	 * @return  \App\G6K\Manager\ExpressionParser\Token The result token of the comparison
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token The result token of the comparison
 	 * @throws \Exception
 	 *
 	 */
@@ -240,8 +240,8 @@ class Evaluator {
 	 * Determines whether two arguments have compatible types.
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The first argument
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The second argument
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The first argument
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The second argument
 	 * @return  bool true if the two arguments have compatible types, false otherwise
 	 *
 	 */
@@ -269,7 +269,7 @@ class Evaluator {
 	 * Guess the type of a token value
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$token <parameter description>
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$token <parameter description>
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -293,9 +293,9 @@ class Evaluator {
 	 * Evaluates a function and returns the result token.
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $func The function token
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $func The function token
 	 * @param   array &$args The arguments of the fuction
-	 * @return  \App\G6K\Manager\ExpressionParser\Token The result token
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token The result token
 	 * @throws \Exception
 	 *
 	 */

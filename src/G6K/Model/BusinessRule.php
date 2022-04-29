@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
-use App\G6K\Manager\ExpressionParser\Parser;
-use App\G6K\Manager\ExpressionParser\Token;
+use Devntech\G6K\Manager\ExpressionParser\Parser;
+use Devntech\G6K\Manager\ExpressionParser\Token;
 
 /**
  * This class allows the storage and retrieval of the attributes of a business rule
@@ -38,7 +38,7 @@ use App\G6K\Manager\ExpressionParser\Token;
 class BusinessRule {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator Simulator object that defines this BusinessRule
+	 * @var \Devntech\G6K\Model\Simulator $simulator Simulator object that defines this BusinessRule
 	 *
 	 * @access  private
 	 *
@@ -86,7 +86,7 @@ class BusinessRule {
 	private $conditions = "";
 
 	/**
-	 * @var \App\G6K\Model\Connector $connector Connector that defines this BusinessRule
+	 * @var \Devntech\G6K\Model\Connector $connector Connector that defines this BusinessRule
 	 *
 	 * @access  private
 	 *
@@ -142,7 +142,7 @@ class BusinessRule {
 	 * Constructor of class BusinessRule
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator Simulator object that defines this BusinessRule
+	 * @param   \Devntech\G6K\Model\Simulator $simulator Simulator object that defines this BusinessRule
 	 * @param   string    $elementId Generated id of this business rule for the DOM element in the browser
 	 * @param   int $id ID of this business rule
 	 * @param   string $name Name of this business rule without spaces or special or accented characters
@@ -161,7 +161,7 @@ class BusinessRule {
 	 * Returns the Simulator object that defines this BusinessRule
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator the Simulator object
+	 * @return  \Devntech\G6K\Model\Simulator the Simulator object
 	 *
 	 */
 	public function getSimulator() {
@@ -288,7 +288,7 @@ class BusinessRule {
 	 * Returns the Connector object of this business rule
 	 *
 	 * @access  public
-	 * @return \App\G6K\Model\Connector The Connector object of this business rule
+	 * @return \Devntech\G6K\Model\Connector The Connector object of this business rule
 	 *
 	 */
 	public function getConnector() {
@@ -299,7 +299,7 @@ class BusinessRule {
 	 * Sets the Connector object of this business rule
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Connector $connector The Connector object of this business rule
+	 * @param   \Devntech\G6K\Model\Connector $connector The Connector object of this business rule
 	 * @return  void
 	 *
 	 */
@@ -334,7 +334,7 @@ class BusinessRule {
 	 * Adds an action to the list of actions that must be executed if the conditions of this business rule are verified.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RuleAction  $ifAction The action to be added
+	 * @param   \Devntech\G6K\Model\RuleAction  $ifAction The action to be added
 	 * @return  void
 	 *
 	 */
@@ -369,7 +369,7 @@ class BusinessRule {
 	 * Adds an action to the list of actions that must be executed if the conditions of this business rule are NOT verified.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RuleAction  $elseAction Action The action to be added
+	 * @param   \Devntech\G6K\Model\RuleAction  $elseAction Action The action to be added
 	 * @return  void
 	 *
 	 */
@@ -403,7 +403,7 @@ class BusinessRule {
 	 * A connector is either a Condition object or a Connector object
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Connector|\App\G6K\Model\Condition $pconnector The connector
+	 * @param   \Devntech\G6K\Model\Connector|\Devntech\G6K\Model\Condition $pconnector The connector
 	 * @return  array The array of conditions
 	 *
 	 */

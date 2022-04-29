@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -37,7 +37,7 @@ namespace App\G6K\Model;
 class Column {
 
 	/**
-	 * @var \App\G6K\Model\Table $table The Table object to which the column belongs
+	 * @var \Devntech\G6K\Model\Table $table The Table object to which the column belongs
 	 *
 	 * @access  private
 	 *
@@ -88,7 +88,7 @@ class Column {
 	 * Constructor of class Column
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Table|null $table The Table object to which the column belongs
+	 * @param   \Devntech\G6K\Model\Table|null $table The Table object to which the column belongs
 	 * @param   int      $id The ID of this Column object
 	 * @param   string   $name The name of this Column object
 	 * @param   string   $type eg date, boolean, number, integer, text, textarea, money, choice, percent, table, department region, country
@@ -106,7 +106,7 @@ class Column {
 	 * Retrieves the Table object to which the column belongs
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Table The Table object to which the column belongs
+	 * @return  \Devntech\G6K\Model\Table The Table object to which the column belongs
 	 *
 	 */
 	public function getTable() {

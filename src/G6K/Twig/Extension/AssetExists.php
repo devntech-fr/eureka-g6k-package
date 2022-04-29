@@ -1,6 +1,6 @@
 <?php
 
-namespace App\G6K\Twig\Extension;
+namespace Devntech\G6K\Twig\Extension;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;

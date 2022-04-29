@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a set of profiles.
@@ -35,7 +35,7 @@ namespace App\G6K\Model;
 class Profiles {
 
 	/**
-	 * @var \App\G6K\Model\Simulator  $simulator The Simulator object that uses this set of profiles
+	 * @var \Devntech\G6K\Model\Simulator  $simulator The Simulator object that uses this set of profiles
 	 *
 	 * @access  private
 	 *
@@ -62,7 +62,7 @@ class Profiles {
 	 * Constructor of class Profiles
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator  $simulator The Simulator object that uses this set of profiles.
+	 * @param   \Devntech\G6K\Model\Simulator  $simulator The Simulator object that uses this set of profiles.
 	 * @return  void
 	 *
 	 */
@@ -74,7 +74,7 @@ class Profiles {
 	 * Returns the Simulator object that uses this set of profiles
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object
 	 *
 	 */
 	public function getSimulator() {
@@ -131,7 +131,7 @@ class Profiles {
 	 * Adds a Profile object to the list of profiles contained in this set of profiles.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Profile $profile The Profile object 
+	 * @param   \Devntech\G6K\Model\Profile $profile The Profile object 
 	 * @return  void
 	 *
 	 */

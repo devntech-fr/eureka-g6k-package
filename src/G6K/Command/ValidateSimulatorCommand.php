@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Command;
+namespace Devntech\G6K\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -33,7 +33,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 
-use App\G6K\Manager\SQLSelectTokenizer;
+use Devntech\G6K\Manager\SQLSelectTokenizer;
 
 /**
  * Validates a simulator against the Simulator.xsd schema file.

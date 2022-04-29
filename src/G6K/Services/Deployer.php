@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Services;
+namespace Devntech\G6K\Services;
 
-use App\G6K\Model\Simulator;
+use Devntech\G6K\Model\Simulator;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Finder\Finder;
@@ -363,7 +363,7 @@ class Deployer {
 	 * - localhost: cp -f {local.rootdir}/{local.file} /var/www/html/simulator/{remote.dir}/
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simu The simulator to deploy
+	 * @param   \Devntech\G6K\Model\Simulator $simu The simulator to deploy
 	 * @return  array The result of the deployment
 	 *
 	 */

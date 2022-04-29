@@ -24,12 +24,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
-use App\G6K\Manager\ExpressionParser\DateFunction;
-use App\G6K\Manager\ExpressionParser\NumberFunction;
-use App\G6K\Manager\ExpressionParser\PercentFunction;
-use App\G6K\Manager\ExpressionParser\MoneyFunction;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\NumberFunction;
+use Devntech\G6K\Manager\ExpressionParser\PercentFunction;
+use Devntech\G6K\Manager\ExpressionParser\MoneyFunction;
 
 /**
  *
@@ -218,7 +218,7 @@ class Data extends DatasetChild {
 	private $choices = array(); 
 
 	/**
-	 * @var \App\G6K\Model\ChoiceSource $choiceSource If the type of this data is "choice" or "multichoice", contains a ChoiceSource object if the list of choices is made with the result of a query on a data source.
+	 * @var \Devntech\G6K\Model\ChoiceSource $choiceSource If the type of this data is "choice" or "multichoice", contains a ChoiceSource object if the list of choices is made with the result of a query on a data source.
 	 *
 	 * @access  private
 	 *
@@ -226,7 +226,7 @@ class Data extends DatasetChild {
 	private $choiceSource = null; 
 
 	/**
-	 * @var \App\G6K\Model\Table $table If the type of this data is "table", contains the Table object associated with this data item.
+	 * @var \Devntech\G6K\Model\Table $table If the type of this data is "table", contains the Table object associated with this data item.
 	 *
 	 * @access  private
 	 *
@@ -261,7 +261,7 @@ class Data extends DatasetChild {
 	 * Constructor of class Data
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator|null $simulator The Simulator object that uses this data item
+	 * @param   \Devntech\G6K\Model\Simulator|null $simulator The Simulator object that uses this data item
 	 * @param   int $id The id of this data item
 	 * @param   string $name The name of this data item
 	 * @return  void
@@ -801,7 +801,7 @@ class Data extends DatasetChild {
 	 * Adds a Choice object in the list of choices of this data item.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\ChoiceGroup|\App\G6K\Model\Choice $choice The Choice object 
+	 * @param   \Devntech\G6K\Model\ChoiceGroup|\Devntech\G6K\Model\Choice $choice The Choice object 
 	 * @return  void
 	 *
 	 */
@@ -814,7 +814,7 @@ class Data extends DatasetChild {
 	 *
 	 * @access  public
 	 * @param   int $id The id of the Choice object
-	 * @return  \App\G6K\Model\Choice|null The Choice object 
+	 * @return  \Devntech\G6K\Model\Choice|null The Choice object 
 	 *
 	 */
 	public function getChoiceById($id) {
@@ -836,7 +836,7 @@ class Data extends DatasetChild {
 	 * Returns the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\ChoiceSource|null The ChoiceSource object
+	 * @return  \Devntech\G6K\Model\ChoiceSource|null The ChoiceSource object
 	 *
 	 */
 	public function getChoiceSource() {
@@ -847,7 +847,7 @@ class Data extends DatasetChild {
 	 * Sets the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object
+	 * @param   \Devntech\G6K\Model\ChoiceSource $choiceSource The ChoiceSource object
 	 * @return  void
 	 *
 	 */
@@ -859,7 +859,7 @@ class Data extends DatasetChild {
 	 * Returns the Table object associated with this data item if the type of this data is "table".
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Table The Table Object
+	 * @return  \Devntech\G6K\Model\Table The Table Object
 	 *
 	 */
 	public function getTable() {
@@ -870,7 +870,7 @@ class Data extends DatasetChild {
 	 * Returns the Table object associated with this data item if the type of this data is "table".
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Table $table The Table Object
+	 * @param   \Devntech\G6K\Model\Table $table The Table Object
 	 * @return  void
 	 *
 	 */

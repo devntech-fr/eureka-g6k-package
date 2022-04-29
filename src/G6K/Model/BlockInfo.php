@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a block of information (blockinfo)
@@ -39,7 +39,7 @@ namespace App\G6K\Model;
 class BlockInfo {
 
 	/**
-	 * @var \App\G6K\Model\Panel $panel Panel that contains this blockinfo
+	 * @var \Devntech\G6K\Model\Panel $panel Panel that contains this blockinfo
 	 *
 	 * @access  private
 	 *
@@ -106,7 +106,7 @@ class BlockInfo {
 	 * Constructor of class BlockInfo
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Panel $panel Panel that contains this blockinfo
+	 * @param   \Devntech\G6K\Model\Panel $panel Panel that contains this blockinfo
 	 * @param   int        $id Blockinfo id
 	 * @return  void
 	 *
@@ -120,7 +120,7 @@ class BlockInfo {
 	 * Returns the Panel object that contains this BlockInfo object
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Panel The container Panel of this BlockInfo object
+	 * @return  \Devntech\G6K\Model\Panel The container Panel of this BlockInfo object
 	 *
 	 */
 	public function getPanel() {
@@ -283,7 +283,7 @@ class BlockInfo {
 	 * Adds a chapter to the list of chapters contained in this BlockInfo object
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Chapter $chapter
+	 * @param   \Devntech\G6K\Model\Chapter $chapter
 	 * @return  void
 	 *
 	 */
@@ -308,7 +308,7 @@ class BlockInfo {
 	 *
 	 * @access  public
 	 * @param   int $id Chapter id
-	 * @return  \App\G6K\Model\Chapter|null The chapter with this ID
+	 * @return  \Devntech\G6K\Model\Chapter|null The chapter with this ID
 	 *
 	 */
 	public function getChapterById($id) {

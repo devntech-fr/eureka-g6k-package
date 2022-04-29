@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -42,7 +42,7 @@ namespace App\G6K\Model;
 class Table {
 
 	/**
-	 * @var \App\G6K\Model\Data      $data The Data object of type 'table' associated with this this table
+	 * @var \Devntech\G6K\Model\Data      $data The Data object of type 'table' associated with this this table
 	 *
 	 * @access  private
 	 *
@@ -74,7 +74,7 @@ class Table {
 	private $label = "";
 
 	/**
-	 * @var \App\G6K\Model\RichText|string|null     $description The description of this table
+	 * @var \Devntech\G6K\Model\RichText|string|null     $description The description of this table
 	 *
 	 * @access  private
 	 *
@@ -101,7 +101,7 @@ class Table {
 	 * Constructor of class Table
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Data|null      $data The Data object of type 'table' associated with this this table
+	 * @param   \Devntech\G6K\Model\Data|null      $data The Data object of type 'table' associated with this this table
 	 * @param   int      $id The ID of this table
 	 * @return  void
 	 *
@@ -163,7 +163,7 @@ class Table {
 	 * Returns null if this table is the description of a database table.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Data|null The Data object
+	 * @return  \Devntech\G6K\Model\Data|null The Data object
 	 *
 	 */
 	public function getData() {
@@ -197,7 +197,7 @@ class Table {
 	 * Returns the description of this table
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText|string|null The description of this table
+	 * @return  \Devntech\G6K\Model\RichText|string|null The description of this table
 	 *
 	 */
 	public function getDescription() {
@@ -208,7 +208,7 @@ class Table {
 	 * Sets the description of this table
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $description The description of this table
+	 * @param   \Devntech\G6K\Model\RichText|string $description The description of this table
 	 * @return  void
 	 *
 	 */
@@ -243,7 +243,7 @@ class Table {
 	 * Adds a Column object to the list of columns of this table
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Column $column The Column object
+	 * @param   \Devntech\G6K\Model\Column $column The Column object
 	 * @return  void
 	 *
 	 */
@@ -256,7 +256,7 @@ class Table {
 	 *
 	 * @access  public
 	 * @param   int $index The index of the column in the list of columns
-	 * @return  \App\G6K\Model\Column The Column object
+	 * @return  \Devntech\G6K\Model\Column The Column object
 	 *
 	 */
 	public function getColumn($index) {
@@ -280,7 +280,7 @@ class Table {
 	 *
 	 * @access  public
 	 * @param   int $id The ID of the column
-	 * @return  \App\G6K\Model\Column|null The Column object
+	 * @return  \Devntech\G6K\Model\Column|null The Column object
 	 *
 	 */
 	public function getColumnById($id) {
@@ -319,7 +319,7 @@ class Table {
 	 * Adds a Row object to the list of rows of this table
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Row $row The Row object 
+	 * @param   \Devntech\G6K\Model\Row $row The Row object 
 	 * @return  void
 	 *
 	 */

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -40,7 +40,7 @@ namespace App\G6K\Model;
 class FieldRow {
 
 	/**
-	 * @var \App\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field row
+	 * @var \Devntech\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field row
 	 *
 	 * @access  private
 	 *
@@ -107,7 +107,7 @@ class FieldRow {
 	 * Constructor of class FieldRow
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field row
+	 * @param   \Devntech\G6K\Model\FieldSet   $fieldset  The FieldSet object that contains this field row
 	 * @param   int        $id The ID of this field row
 	 * @param   string     $label The label of this field row
 	 * @return  void
@@ -123,7 +123,7 @@ class FieldRow {
 	 * Returns the FieldSet object that contains this field row
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\FieldSet The FieldSet Object
+	 * @return  \Devntech\G6K\Model\FieldSet The FieldSet Object
 	 *
 	 */
 	public function getFieldSet() {
@@ -337,7 +337,7 @@ class FieldRow {
 	 * Adds a Field object to the list of fields contained in this field row.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Field $field The Field object
+	 * @param   \Devntech\G6K\Model\Field $field The Field object
 	 * @return  void
 	 *
 	 */
@@ -362,7 +362,7 @@ class FieldRow {
 	 *
 	 * @access  public
 	 * @param   int $position The position of the field
-	 * @return  \App\G6K\Model\Field|null the Field object
+	 * @return  \Devntech\G6K\Model\Field|null the Field object
 	 *
 	 */
 	public function getFieldByPosition($position) {

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a web site in which a simulator is ran.
@@ -35,7 +35,7 @@ namespace App\G6K\Model;
 class Site {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that uses this web site.
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this web site.
 	 *
 	 * @access  private
 	 *
@@ -70,7 +70,7 @@ class Site {
 	 * Constructor of class Site
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that uses this web site.
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this web site.
 	 * @param   int $id The id of this Site object.
 	 * @param   string $name The name of this web site.
 	 * @param   string $home The URL of the home page of this web site.
@@ -88,7 +88,7 @@ class Site {
 	 * Returns the Simulator object that uses this web site.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator object.
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator object.
 	 *
 	 */
 	public function getSimulator() {

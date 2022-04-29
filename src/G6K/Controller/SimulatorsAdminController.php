@@ -24,39 +24,39 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
-use App\G6K\Model\Simulator;
-use App\G6K\Model\Source;
-use App\G6K\Model\Parameter;
-use App\G6K\Model\ChoiceGroup;
-use App\G6K\Model\Choice;
-use App\G6K\Model\ChoiceSource;
-use App\G6K\Model\DataGroup;
-use App\G6K\Model\Data;
-use App\G6K\Model\Step;
-use App\G6K\Model\Action;
-use App\G6K\Model\FootNotes;
-use App\G6K\Model\FootNote;
-use App\G6K\Model\Panel;
-use App\G6K\Model\FieldSet;
-use App\G6K\Model\Column;
-use App\G6K\Model\FieldRow;
-use App\G6K\Model\Field;
-use App\G6K\Model\BlockInfo;
-use App\G6K\Model\FieldNote;
-use App\G6K\Model\Chapter;
-use App\G6K\Model\Section;
-use App\G6K\Model\BusinessRule;
-use App\G6K\Model\Connector;
-use App\G6K\Model\Condition;
-use App\G6K\Model\RuleAction;
-use App\G6K\Model\Profiles;
-use App\G6K\Model\Profile;
-use App\G6K\Model\RichText;
+use Devntech\G6K\Model\Simulator;
+use Devntech\G6K\Model\Source;
+use Devntech\G6K\Model\Parameter;
+use Devntech\G6K\Model\ChoiceGroup;
+use Devntech\G6K\Model\Choice;
+use Devntech\G6K\Model\ChoiceSource;
+use Devntech\G6K\Model\DataGroup;
+use Devntech\G6K\Model\Data;
+use Devntech\G6K\Model\Step;
+use Devntech\G6K\Model\Action;
+use Devntech\G6K\Model\FootNotes;
+use Devntech\G6K\Model\FootNote;
+use Devntech\G6K\Model\Panel;
+use Devntech\G6K\Model\FieldSet;
+use Devntech\G6K\Model\Column;
+use Devntech\G6K\Model\FieldRow;
+use Devntech\G6K\Model\Field;
+use Devntech\G6K\Model\BlockInfo;
+use Devntech\G6K\Model\FieldNote;
+use Devntech\G6K\Model\Chapter;
+use Devntech\G6K\Model\Section;
+use Devntech\G6K\Model\BusinessRule;
+use Devntech\G6K\Model\Connector;
+use Devntech\G6K\Model\Condition;
+use Devntech\G6K\Model\RuleAction;
+use Devntech\G6K\Model\Profiles;
+use Devntech\G6K\Model\Profile;
+use Devntech\G6K\Model\RichText;
 
-use App\G6K\Manager\ControllersTrait;
-use App\G6K\Manager\SQLSelectTokenizer;
+use Devntech\G6K\Manager\ControllersTrait;
+use Devntech\G6K\Manager\SQLSelectTokenizer;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -111,7 +111,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	const SQL_LIMIT_KEYWORD = 'LIMIT ';
 
 	/**
-	 * @var \App\G6K\Model\Simulator|null $simu Instance of the Simulator class
+	 * @var \Devntech\G6K\Model\Simulator|null $simu Instance of the Simulator class
 	 *
 	 * @access  public
 	 *
@@ -770,7 +770,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $source array of attributes
-	 * @return  \App\G6K\Model\Source the Source object
+	 * @return  \Devntech\G6K\Model\Source the Source object
 	 *
 	 */
 	protected function makeSource($source) {
@@ -808,8 +808,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $parameter array of attributes
-	 * @param   \App\G6K\Model\Source $sourceObj the Source object
-	 * @return  \App\G6K\Model\Parameter the Parameter object
+	 * @param   \Devntech\G6K\Model\Source $sourceObj the Source object
+	 * @return  \Devntech\G6K\Model\Parameter the Parameter object
 	 *
 	 */
 	protected function makeParameter($parameter, $sourceObj) {
@@ -831,7 +831,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $datagroup array of attributes
-	 * @return  \App\G6K\Model\DataGroup the DataGroup object
+	 * @return  \Devntech\G6K\Model\DataGroup the DataGroup object
 	 *
 	 */
 	protected function makeDataGroup($datagroup) {
@@ -854,7 +854,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $data array of attributes
-	 * @return  \App\G6K\Model\Data the Data object
+	 * @return  \Devntech\G6K\Model\Data the Data object
 	 *
 	 */
 	protected function makeData($data) {
@@ -920,7 +920,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $step array of attributes
-	 * @return  \App\G6K\Model\Step the Step object
+	 * @return  \Devntech\G6K\Model\Step the Step object
 	 *
 	 */
 	protected function makeStep($step) {
@@ -968,8 +968,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $panel array of attributes
-	 * @param   \App\G6K\Model\Step $stepObj the Step object
-	 * @return  \App\G6K\Model\Panel the Panel object
+	 * @param   \Devntech\G6K\Model\Step $stepObj the Step object
+	 * @return  \Devntech\G6K\Model\Panel the Panel object
 	 *
 	 */
 	protected function makePanel($panel, $stepObj) {
@@ -991,8 +991,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $fieldset array of attributes
-	 * @param   \App\G6K\Model\Panel $panelObj the Panel object
-	 * @return  \App\G6K\Model\FieldSet the FieldSet object
+	 * @param   \Devntech\G6K\Model\Panel $panelObj the Panel object
+	 * @return  \Devntech\G6K\Model\FieldSet the FieldSet object
 	 *
 	 */
 	protected function makeFieldSet($fieldset, $panelObj) {
@@ -1036,8 +1036,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $fieldrow array of attributes
-	 * @param   \App\G6K\Model\FieldSet $fieldsetObj the FieldSet object
-	 * @return  \App\G6K\Model\FieldRow the FieldRow object
+	 * @param   \Devntech\G6K\Model\FieldSet $fieldsetObj the FieldSet object
+	 * @return  \Devntech\G6K\Model\FieldRow the FieldRow object
 	 *
 	 */
 	protected function makeFieldRow($fieldrow, $fieldsetObj) {
@@ -1057,8 +1057,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $field array of attributes
-	 * @param   \App\G6K\Model\FieldSet $fieldsetObj the FieldSet object
-	 * @return  \App\G6K\Model\Field the Field object
+	 * @param   \Devntech\G6K\Model\FieldSet $fieldsetObj the FieldSet object
+	 * @return  \Devntech\G6K\Model\Field the Field object
 	 *
 	 */
 	protected function makeField($field, $fieldsetObj) {
@@ -1105,8 +1105,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $blockinfo array of attributes
-	 * @param   \App\G6K\Model\Panel $panelObj the Panel object
-	 * @return  \App\G6K\Model\BlockInfo the BlockInfo object
+	 * @param   \Devntech\G6K\Model\Panel $panelObj the Panel object
+	 * @return  \Devntech\G6K\Model\BlockInfo the BlockInfo object
 	 *
 	 */
 	protected function makeBlockInfo($blockinfo, $panelObj) {
@@ -1130,8 +1130,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $chapter array of attributes
-	 * @param   \App\G6K\Model\BlockInfo $blockinfoObj the BlockInfo object
-	 * @return  \App\G6K\Model\Chapter the Chapter object
+	 * @param   \Devntech\G6K\Model\BlockInfo $blockinfoObj the BlockInfo object
+	 * @return  \Devntech\G6K\Model\Chapter the Chapter object
 	 *
 	 */
 	protected function makeChapter($chapter, $blockinfoObj) {
@@ -1151,8 +1151,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $section array of attributes
-	 * @param   \App\G6K\Model\Chapter $chapterObj the Chapter object
-	 * @return  \App\G6K\Model\Section the Section object
+	 * @param   \Devntech\G6K\Model\Chapter $chapterObj the Chapter object
+	 * @return  \Devntech\G6K\Model\Section the Section object
 	 *
 	 */
 	protected function makeSection($section, $chapterObj) {
@@ -1181,7 +1181,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $brule array of attributes
-	 * @return  \App\G6K\Model\BusinessRule the BusinessRule object
+	 * @return  \Devntech\G6K\Model\BusinessRule the BusinessRule object
 	 *
 	 */
 	protected function makeBusinessRule($brule) {
@@ -1210,7 +1210,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 * @access  protected
 	 * @param   int $id id of the latest rule action
 	 * @param   array $action array of attributes
-	 * @return  \App\G6K\Model\RuleAction the RuleAction object
+	 * @return  \Devntech\G6K\Model\RuleAction the RuleAction object
 	 *
 	 */
 	protected function makeRuleAction($id, $action) {
@@ -1363,7 +1363,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $profiles array of attributes
-	 * @return  \App\G6K\Model\Profiles the Profiles object
+	 * @return  \Devntech\G6K\Model\Profiles the Profiles object
 	 *
 	 */
 	protected function makeProfiles($profiles) {
@@ -1380,7 +1380,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $profile array of attributes
-	 * @return  \App\G6K\Model\Profile the Profile object
+	 * @return  \Devntech\G6K\Model\Profile the Profile object
 	 *
 	 */
 	protected function makeProfile($profile) {
@@ -1403,8 +1403,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  protected
 	 * @param   array $action array of attributes
-	 * @param   \App\G6K\Model\Step $stepObj the Step object
-	 * @return  \App\G6K\Model\Action the Action object
+	 * @param   \Devntech\G6K\Model\Step $stepObj the Step object
+	 * @return  \Devntech\G6K\Model\Action the Action object
 	 *
 	 */
 	protected function makeAction($action, $stepObj) {
@@ -1475,8 +1475,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 *
 	 * @access  private
 	 * @param   array $connector array of attributes
-	 * @param   \App\G6K\Model\Connector $parentConnector (default: null) Parent connector
-	 * @return  \App\G6K\Model\Connector|\App\G6K\Model\Condition
+	 * @param   \Devntech\G6K\Model\Connector $parentConnector (default: null) Parent connector
+	 * @return  \Devntech\G6K\Model\Connector|\Devntech\G6K\Model\Condition
 	 *
 	 */
 	private function loadConnector($connector, $parentConnector = null) {
@@ -3566,7 +3566,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 * makes an array of attributes of the field from the field object
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Field $field The field object
+	 * @param   \Devntech\G6K\Model\Field $field The field object
 	 * @return  array Array of attributes of the field
 	 *
 	 */
@@ -3810,7 +3810,7 @@ class SimulatorsAdminController extends BaseAdminController {
 	 * Finds the disposition of a fieldset where one of the elements is the target of a rule action
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Model\RuleAction $action The rule action
+	 * @param   \Devntech\G6K\Model\RuleAction $action The rule action
 	 * @return  string
 	 *
 	 */
@@ -3843,8 +3843,8 @@ class SimulatorsAdminController extends BaseAdminController {
 	 * Transforms the lines of a text into html paragraphs
 	 *
 	 * @access  private
-	 * @param   \App\G6K\Model\RichText|string $string
-	 * @return  \App\G6K\Model\RichText|string
+	 * @param   \Devntech\G6K\Model\RichText|string $string
+	 * @return  \Devntech\G6K\Model\RichText|string
 	 *
 	 */
 	private function paragraphs ($string) {

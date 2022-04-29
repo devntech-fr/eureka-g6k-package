@@ -24,13 +24,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Composer;
+namespace Devntech\G6K\Composer;
 
 use Composer\Script\Event;
 use Symfony\Component\Dotenv\Dotenv;
 
-use App\G6K\Model\Database;
-use App\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Model\Database;
+use Devntech\G6K\Manager\DatasourcesHelper;
 
 /**
  *

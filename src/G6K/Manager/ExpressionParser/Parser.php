@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\ExpressionParser;
+namespace Devntech\G6K\Manager\ExpressionParser;
 
 /**
  *
@@ -82,7 +82,7 @@ const PATTERN = '/([\s!,\+\-\*\/\^%\(\)\[\]=\<\>\~\&\^\|\?\:°])/u';
 	 *
 	 * @access  public
 	 * @param   string $infix The infixed expression string
-	 * @return  \App\G6K\Manager\ExpressionParser\Expression The Expression object
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Expression The Expression object
 	 * @throws \Exception if an error has occurred
 	 *
 	 */

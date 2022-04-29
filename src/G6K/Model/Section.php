@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a section.
@@ -39,7 +39,7 @@ namespace App\G6K\Model;
 class Section {
 
 	/**
-	 * @var  \App\G6K\Model\Chapter $chapter The Chapter object that contains this section. 
+	 * @var  \Devntech\G6K\Model\Chapter $chapter The Chapter object that contains this section. 
 	 *
 	 * @access  private
 	 *
@@ -71,7 +71,7 @@ class Section {
 	private $label = "";
 
 	/**
-	 * @var \App\G6K\Model\RichText|null     $content The textual content of this section
+	 * @var \Devntech\G6K\Model\RichText|null     $content The textual content of this section
 	 *
 	 * @access  private
 	 *
@@ -79,7 +79,7 @@ class Section {
 	private $content = null;
 
 	/**
-	 * @var \App\G6K\Model\RichText|null     $annotations The annotations on the text of this section
+	 * @var \Devntech\G6K\Model\RichText|null     $annotations The annotations on the text of this section
 	 *
 	 * @access  private
 	 *
@@ -98,7 +98,7 @@ class Section {
 	 * Constructor of class Section
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Chapter $chapter The Chapter object that contains this section. 
+	 * @param   \Devntech\G6K\Model\Chapter $chapter The Chapter object that contains this section. 
 	 * @param   int        $id The Id of this section.
 	 * @return  void
 	 *
@@ -112,7 +112,7 @@ class Section {
 	 * Returns the Chapter object that contains this section. 
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Chapter The Chapter object 
+	 * @return  \Devntech\G6K\Model\Chapter The Chapter object 
 	 *
 	 */
 	public function getChapter() {
@@ -192,7 +192,7 @@ class Section {
 	 * Returns the textual content of this section
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText|null The textual content of this section.
+	 * @return  \Devntech\G6K\Model\RichText|null The textual content of this section.
 	 *
 	 */
 	public function getContent() {
@@ -203,7 +203,7 @@ class Section {
 	 * Sets the textual content of this section
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $content The textual content of this section.
+	 * @param   \Devntech\G6K\Model\RichText     $content The textual content of this section.
 	 * @return  void
 	 *
 	 */
@@ -215,7 +215,7 @@ class Section {
 	 * Returns the annotations on the text of this section
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText|null The annotations on the text of this section
+	 * @return  \Devntech\G6K\Model\RichText|null The annotations on the text of this section
 	 *
 	 */
 	public function getAnnotations() {
@@ -226,7 +226,7 @@ class Section {
 	 * Sets the annotations on the text of this section
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $annotations The annotations on the text of this section
+	 * @param   \Devntech\G6K\Model\RichText     $annotations The annotations on the text of this section
 	 * @return  void
 	 *
 	 */

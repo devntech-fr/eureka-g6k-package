@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
  
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 use RuntimeException;
 use Symfony\Component\Console\Output\StreamOutput;

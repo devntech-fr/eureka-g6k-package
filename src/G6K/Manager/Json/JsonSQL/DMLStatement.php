@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\ExpressionParser\Parser;
+use Devntech\G6K\Manager\ExpressionParser\Parser;
 
 /**
  *  The class JsonSQLStatement represents a prepared statement and, 

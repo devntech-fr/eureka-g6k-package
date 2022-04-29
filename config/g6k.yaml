@@ -370,7 +370,7 @@ services:
     _defaults: { public: true }
 
 #    kernel.listener.g6k_exception_listener:
-#        class: App\G6K\EventListener\G6KExceptionListener
+#        class: Devntech\G6K\EventListener\G6KExceptionListener
 #        autowire: true
 #        autoconfigure: true
 #        public: false
@@ -378,9 +378,9 @@ services:
 #            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
 
     g6k.file_uploader:
-        class: App\G6K\Services\FileUploader
+        class: Devntech\G6K\Services\FileUploader
         arguments: ['%upload_directory%']
 
     g6k.deployer:
-        class: App\G6K\Services\Deployer
+        class: Devntech\G6K\Services\Deployer
         arguments: [ "@kernel", "@translator" ]

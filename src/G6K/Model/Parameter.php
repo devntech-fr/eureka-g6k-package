@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a parameter.
@@ -38,7 +38,7 @@ namespace App\G6K\Model;
 class Parameter {
 
 	/**
-	 * @var \App\G6K\Model\Source $source The Source object that uses this parameter.
+	 * @var \Devntech\G6K\Model\Source $source The Source object that uses this parameter.
 	 *
 	 * @access  private
 	 *
@@ -105,7 +105,7 @@ class Parameter {
 	 * Constructor of class Parameter
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Source $source The Source object that uses this parameter.
+	 * @param   \Devntech\G6K\Model\Source $source The Source object that uses this parameter.
 	 * @param   string     $type The type of this parameter
 	 * @return  void
 	 *
@@ -119,7 +119,7 @@ class Parameter {
 	 * Returns the Source object that uses this parameter.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Source The Source object 
+	 * @return  \Devntech\G6K\Model\Source The Source object 
 	 *
 	 */
 	public function getSource() {

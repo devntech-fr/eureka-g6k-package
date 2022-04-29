@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -37,7 +37,7 @@ namespace App\G6K\Model;
 class Chapter {
 
 	/**
-	 * @var \App\G6K\Model\BlockInfo $blocinfo BlockInfo object that contains this chapter
+	 * @var \Devntech\G6K\Model\BlockInfo $blocinfo BlockInfo object that contains this chapter
 	 *
 	 * @access  private
 	 *
@@ -104,7 +104,7 @@ class Chapter {
 	 * Constructor of class Chapter
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\BlockInfo $blocinfo BlockInfo object that contains this chapter
+	 * @param   \Devntech\G6K\Model\BlockInfo $blocinfo BlockInfo object that contains this chapter
 	 * @param   int        $id The chapter ID
 	 * @return  void
 	 *
@@ -118,7 +118,7 @@ class Chapter {
 	 * Retrieves the BlockInfo object that contains this chapter
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\BlockInfo the BlockInfo object
+	 * @return  \Devntech\G6K\Model\BlockInfo the BlockInfo object
 	 *
 	 */
 	public function getBlocinfo() {
@@ -278,7 +278,7 @@ class Chapter {
 	 * Adds a section to the list of section contained in this Chapter object
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Section $section
+	 * @param   \Devntech\G6K\Model\Section $section
 	 * @return  void
 	 *
 	 */
@@ -303,7 +303,7 @@ class Chapter {
 	 *
 	 * @access  public
 	 * @param   int $id Section id
-	 * @return  \App\G6K\Model\Section|null The section with this ID
+	 * @return  \Devntech\G6K\Model\Section|null The section with this ID
 	 *
 	 */
 	public function getSectionById($id) {

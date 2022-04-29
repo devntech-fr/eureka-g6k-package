@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\ExpressionParser;
+namespace Devntech\G6K\Manager\ExpressionParser;
 
 /**
  *
@@ -40,9 +40,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the addition
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the addition
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -98,9 +98,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the subtraction
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the subtraction
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -140,9 +140,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the product
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the product
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -163,9 +163,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the dividend
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the divisor
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the quotient of the division
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the dividend
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the divisor
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the quotient of the division
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -186,9 +186,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the dividend
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the divisor
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the remainder of the division
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the dividend
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the divisor
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the remainder of the division
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -209,9 +209,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the operation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the operation
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -232,9 +232,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide AND
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide AND
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -255,9 +255,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide XOR
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide XOR
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -278,9 +278,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide OR
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the bitwide OR
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -301,9 +301,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical AND
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical AND
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -343,9 +343,9 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical OR
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical OR
 	 * @return  void
 	 * @throws \Exception <description of the exception>
 	 *
@@ -385,8 +385,8 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the operation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the operation
 	 * @return  void
 	 * @throws \Exception <description of the exception>
 	 *
@@ -407,8 +407,8 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the negation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the negation
 	 * @return  void
 	 * @throws \Exception <description of the exception>
 	 *
@@ -429,8 +429,8 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical negation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the logical negation
 	 * @return  void
 	 * @throws \Exception <description of the exception>
 	 *
@@ -452,8 +452,8 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the number expressed in radians
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the number expressed in degrees
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the number expressed in radians
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the number expressed in degrees
 	 * @return  void
 	 * @throws \Exception
 	 *
@@ -474,8 +474,8 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the ternary else operation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the first operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the ternary else operation
 	 * @return  void
 	 *
 	 */
@@ -488,10 +488,10 @@ class Operation {
 	 *
 	 * @access  public
 	 * @static 
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg1 The token containing the boolean operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $arg3 The token containing the third operand
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the ternary operation
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg1 The token containing the boolean operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg2 The token containing the second operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $arg3 The token containing the third operand
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$result The token containing the result of the ternary operation
 	 * @return  void
 	 * @throws \Exception
 	 *

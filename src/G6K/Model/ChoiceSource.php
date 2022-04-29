@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -42,7 +42,7 @@ namespace App\G6K\Model;
 class ChoiceSource {
 
 	/**
-	 * @var \App\G6K\Model\Data $data The Data object that uses this ChoiceSource
+	 * @var \Devntech\G6K\Model\Data $data The Data object that uses this ChoiceSource
 	 *
 	 * @access  private
 	 *
@@ -93,7 +93,7 @@ class ChoiceSource {
 	 * Constructor of class ChoiceSource
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Data $data The Data object that uses this ChoiceSource
+	 * @param   \Devntech\G6K\Model\Data $data The Data object that uses this ChoiceSource
 	 * @param   int        $id The ID of this ChoiceSource object
 	 * @param   string     $valueColumn The name of the column that contains the value that will be assigned to a Choice object in a choices list. 
 	 * @param   string     $labelColumn The name of the column that contains the label that will be assigned to a Choice object in a choices list. 
@@ -111,7 +111,7 @@ class ChoiceSource {
 	 * Retrieves the Data object that uses this ChoiceSource
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Data The Data object that uses this ChoiceSource
+	 * @return  \Devntech\G6K\Model\Data The Data object that uses this ChoiceSource
 	 *
 	 */
 	public function getData() {

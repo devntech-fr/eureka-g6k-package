@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
-use App\G6K\Manager\ExpressionParser\Parser;
-use App\G6K\Manager\ExpressionParser\Token;
-use App\G6K\Manager\Splitter;
+use Devntech\G6K\Manager\ExpressionParser\Parser;
+use Devntech\G6K\Manager\ExpressionParser\Token;
+use Devntech\G6K\Manager\Splitter;
 
 /**
  * This class allows the tokenization of an SQL select request.
@@ -292,7 +292,7 @@ class SQLSelectTokenizer  {
 	 *
 	 * @access  protected
 	 * @param   \stdClass &$condition The target condition
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $token The token to be inserted
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $token The token to be inserted
 	 * @return  void
 	 *
 	 */

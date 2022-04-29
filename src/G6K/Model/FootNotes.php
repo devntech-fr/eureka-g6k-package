@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -37,7 +37,7 @@ namespace App\G6K\Model;
 class FootNotes {
 
 	/**
-	 * @var \App\G6K\Model\Step $step The Step object to which this footnote container is attached
+	 * @var \Devntech\G6K\Model\Step $step The Step object to which this footnote container is attached
 	 *
 	 * @access  private
 	 *
@@ -72,7 +72,7 @@ class FootNotes {
 	 * Constructor of class FootNotes
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Step $step The Step object to which this footnote container is attached
+	 * @param   \Devntech\G6K\Model\Step $step The Step object to which this footnote container is attached
 	 * @return  void
 	 *
 	 */
@@ -84,7 +84,7 @@ class FootNotes {
 	 * Returns the Step object to which this footnote container is attached.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Step The Step object
+	 * @return  \Devntech\G6K\Model\Step The Step object
 	 *
 	 */
 	public function getStep() {
@@ -151,7 +151,7 @@ class FootNotes {
 	 * Adds a FootNote Object to the list of footnotes contained in this container
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FootNote $footnote The FootNote Object 
+	 * @param   \Devntech\G6K\Model\FootNote $footnote The FootNote Object 
 	 * @return  void
 	 *
 	 */
@@ -164,7 +164,7 @@ class FootNotes {
 	 *
 	 * @access  public
 	 * @param   int $id The ID of the footnote 
-	 * @return  \App\G6K\Model\FootNote|null The FootNote object
+	 * @return  \Devntech\G6K\Model\FootNote|null The FootNote object
 	 *
 	 */
 	public function getFootNoteById($id) {

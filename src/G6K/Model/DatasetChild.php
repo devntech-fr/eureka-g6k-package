@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -39,7 +39,7 @@ namespace App\G6K\Model;
 abstract class DatasetChild {
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simulator The Simulator object that uses this dataset child.
+	 * @var \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this dataset child.
 	 *
 	 * @access  protected
 	 *
@@ -71,7 +71,7 @@ abstract class DatasetChild {
 	protected $label = "";
 
 	/**
-	 * @var \App\G6K\Model\RichText     $description The description of this dataset child.
+	 * @var \Devntech\G6K\Model\RichText     $description The description of this dataset child.
 	 *
 	 * @access  protected
 	 *
@@ -122,7 +122,7 @@ abstract class DatasetChild {
 	 * Constructor of class DatasetChild
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that uses this dataset child.
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this dataset child.
 	 * @param   int        $id The ID of this dataset child.
 	 * @param   string     $name The name of this dataset child.
 	 * @return  void
@@ -138,7 +138,7 @@ abstract class DatasetChild {
 	 * Returns the Simulator object that uses this dataset child
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator  The Simulator object 
+	 * @return  \Devntech\G6K\Model\Simulator  The Simulator object 
 	 *
 	 */
 	public function getSimulator() {
@@ -218,7 +218,7 @@ abstract class DatasetChild {
 	 * Returns the description of this dataset child.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\RichText The description of this dataset child.
+	 * @return  \Devntech\G6K\Model\RichText The description of this dataset child.
 	 *
 	 */
 	public function getDescription() {
@@ -229,7 +229,7 @@ abstract class DatasetChild {
 	 * Sets the description of this dataset child.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText     $description The description of this dataset child.
+	 * @param   \Devntech\G6K\Model\RichText     $description The description of this dataset child.
 	 * @return  void
 	 *
 	 */

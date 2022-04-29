@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  * This class provides static functions to update the definition of tables in a JsonSQL database
@@ -39,7 +39,7 @@ class JsonTable  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param \stdClass $columns The columns definition 
 	 * @param array $required The list of required columns
@@ -88,7 +88,7 @@ class JsonTable  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param bool $ifexists if true, don't throw an error if the table doesn't exists
 	 * @return void
@@ -112,7 +112,7 @@ class JsonTable  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $newname The new name of the table
 	 * @return void
@@ -138,7 +138,7 @@ class JsonTable  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string|bool $title The title content. If false, remove the title
 	 * @return void
@@ -169,7 +169,7 @@ class JsonTable  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string|bool $description The description content. If false, remove the description
 	 * @return void

@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 use Symfony\Component\DomCrawler\Crawler;
 use Flow\JSONPath\JSONPath;
-use App\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
 
 /**
  *
@@ -328,7 +328,7 @@ class ResultFilter {
 			$path = preg_replace("/". $func . "\s*\(/", "php:functionString('" . $func . "', ", $path);
 		}
 		foreach ($this->functions as $func) {
-			$path = preg_replace("/". $func . "\s*\(/", "php:function('App\G6K\Manager\ResultFilter::" . $func . "', ", $path);
+			$path = preg_replace("/". $func . "\s*\(/", "php:function('Devntech\G6K\Manager\ResultFilter::" . $func . "', ", $path);
 		}
 		return $path;
 	}

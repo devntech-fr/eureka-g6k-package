@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  * This class represents an error raised by JsonSQL.

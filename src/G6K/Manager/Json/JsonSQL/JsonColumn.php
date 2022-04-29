@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
 /**
  * This class provides static functions to update the definition of columns in a JsonSQL database
@@ -39,7 +39,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The name of the new column
 	 * @param \stdClass $columnDef The column definition 
@@ -72,7 +72,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The  actual column name in the table
 	 * @param string $newname The new name of the column
@@ -102,7 +102,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name to drop in the table
 	 * @param bool $ifexists if true, don't throw an error if the table or the column doesn't exists
@@ -138,7 +138,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name
 	 * @param string $type The type of the column
@@ -366,7 +366,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param bool $allownull if true, the column allow null value
@@ -397,7 +397,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param string|bool $default The default value. If false, remove the default
@@ -424,7 +424,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param bool $remove if true, remove the primary key
@@ -480,7 +480,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param bool $remove if true, remove the primary key
@@ -534,7 +534,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param string|bool $title The title content. If false, remove the title
@@ -564,7 +564,7 @@ class JsonColumn  {
 	 *
 	 * @access public
 	 * @static
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @param string|bool $description The description content. If false, remove the description
@@ -594,11 +594,11 @@ class JsonColumn  {
 	 *
 	 * @access  private
 	 * @static 
-	 * @param \App\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
+	 * @param \Devntech\G6K\Manager\Json\JsonSQL\Engine $engine The engine using this function
 	 * @param string $table The table name
 	 * @param string $column The actual column name 
 	 * @return  void
-	 * @throws \App\G6K\Manager\Json\JsonSQL\JsonSQLException if the column doesn't exists
+	 * @throws \Devntech\G6K\Manager\Json\JsonSQL\JsonSQLException if the column doesn't exists
 	 *
 	 */
 	private static function checkColumn(Engine $engine, $table, $column) {

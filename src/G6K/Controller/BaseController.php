@@ -24,28 +24,28 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
-use App\G6K\Model\Simulator;
-use App\G6K\Model\DataGroup;
-use App\G6K\Model\Data;
-use App\G6K\Model\FieldSet;
-use App\G6K\Model\FieldRow;
-use App\G6K\Model\Field;
-use App\G6K\Model\BlockInfo;
-use App\G6K\Model\Step;
+use Devntech\G6K\Model\Simulator;
+use Devntech\G6K\Model\DataGroup;
+use Devntech\G6K\Model\Data;
+use Devntech\G6K\Model\FieldSet;
+use Devntech\G6K\Model\FieldRow;
+use Devntech\G6K\Model\Field;
+use Devntech\G6K\Model\BlockInfo;
+use Devntech\G6K\Model\Step;
 
-use App\G6K\Manager\ControllersTrait;
+use Devntech\G6K\Manager\ControllersTrait;
 
-use App\G6K\Manager\ExpressionParser\Parser;
-use App\G6K\Manager\DOMClient as Client;
-use App\G6K\Manager\ResultFilter;
-use App\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\Parser;
+use Devntech\G6K\Manager\DOMClient as Client;
+use Devntech\G6K\Manager\ResultFilter;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -74,7 +74,7 @@ class BaseController extends AbstractController {
 	use ControllersTrait;
 
 	/**
-	 * @var \App\G6K\Model\Simulator $simu Simulator instance used by this controller
+	 * @var \Devntech\G6K\Model\Simulator $simu Simulator instance used by this controller
 	 *
 	 * @access  public
 	 *
@@ -82,7 +82,7 @@ class BaseController extends AbstractController {
 	public $simu;
 
 	/**
-	 * @var \App\G6K\Manager\ExpressionParser\Parser $parser Parser instance used by this controller
+	 * @var \Devntech\G6K\Manager\ExpressionParser\Parser $parser Parser instance used by this controller
 	 *
 	 * @access  protected
 	 *
@@ -226,7 +226,7 @@ class BaseController extends AbstractController {
 	 * @param   string $simu The simulator name
 	 * @param   string &$view The view name
 	 * @param   bool $test true if it is a test from the administration module, false otherwise
-	 * @return  \Symfony\Component\HttpFoundation\Response|\App\G6K\Model\Step|null
+	 * @return  \Symfony\Component\HttpFoundation\Response|\Devntech\G6K\Model\Step|null
 	 *
 	 */
 	protected function runStep(Request $request, $form, $simu, &$view, $test)
@@ -704,7 +704,7 @@ class BaseController extends AbstractController {
 	 * Checks the given field
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Field $field
+	 * @param   \Devntech\G6K\Model\Field $field
 	 * @param   array $form The form fields
 	 * @param   bool $skipValidation
 	 * @return  void
@@ -764,8 +764,8 @@ class BaseController extends AbstractController {
 	 * Processes the given field for the step
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Field $field
-	 * @param   \App\G6K\Model\Step $step
+	 * @param   \Devntech\G6K\Model\Field $field
+	 * @param   \Devntech\G6K\Model\Step $step
 	 * @param   bool &$displayable
 	 * @return  void
 	 *
@@ -808,7 +808,7 @@ class BaseController extends AbstractController {
 	 * Replaces data values in the notes of a field
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Field $field
+	 * @param   \Devntech\G6K\Model\Field $field
 	 * @return  void
 	 *
 	 */
@@ -844,7 +844,7 @@ class BaseController extends AbstractController {
 	 * Evaluates the default value of the given data
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Data $data
+	 * @param   \Devntech\G6K\Model\Data $data
 	 * @return  void
 	 *
 	 */
@@ -885,7 +885,7 @@ class BaseController extends AbstractController {
 	 * Evaluates the minimum value of the given data
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Data $data
+	 * @param   \Devntech\G6K\Model\Data $data
 	 * @return  void
 	 *
 	 */
@@ -907,7 +907,7 @@ class BaseController extends AbstractController {
 	 * Evaluates the maximum value of the given data
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Data $data
+	 * @param   \Devntech\G6K\Model\Data $data
 	 * @return  void
 	 *
 	 */
@@ -951,7 +951,7 @@ class BaseController extends AbstractController {
 	 * Processes the given data for the step
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Data $data
+	 * @param   \Devntech\G6K\Model\Data $data
 	 * @param   int $istep The step number
 	 * @return  void
 	 *
@@ -1292,7 +1292,7 @@ class BaseController extends AbstractController {
 	 * Evaluates the conditions of a business rule an executes the suitable actions
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\BusinessRule $businessrule The rule to be processed
+	 * @param   \Devntech\G6K\Model\BusinessRule $businessrule The rule to be processed
 	 * @param   int $istep The step number
 	 * @return  void
 	 *

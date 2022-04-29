@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\Json\JsonSQL;
-use App\G6K\Manager\Splitter;
+use Devntech\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Splitter;
 
 /**
  * This class allows you  to store and retrieve data from files in JSON format using SQL standard.
@@ -46,7 +46,7 @@ class Engine  {
 	/**
 	 * A pointer on the JsonSQL owner.
 	 *
-	 * @var \App\G6K\Manager\Json\JsonSQL|null The JsonSQL instance
+	 * @var \Devntech\G6K\Manager\Json\JsonSQL|null The JsonSQL instance
 	 * @access private
 	 */
 	private $jsonsql = null;
@@ -133,7 +133,7 @@ class Engine  {
 	 * Constructor of class Engine
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
+	 * @param   \Devntech\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
 	 * @return  void
 	 *
 	 */

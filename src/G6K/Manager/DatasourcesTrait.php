@@ -24,17 +24,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
  
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-use App\G6K\Model\Database;
+use Devntech\G6K\Model\Database;
 
-use App\G6K\Manager\DatasourcesHelper;
-use App\G6K\Manager\DOMClient as Client;
-use App\G6K\Manager\ResultFilter;
-use App\G6K\Manager\Json\JsonSQL\Parser;
-use App\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\DatasourcesHelper;
+use Devntech\G6K\Manager\DOMClient as Client;
+use Devntech\G6K\Manager\ResultFilter;
+use Devntech\G6K\Manager\Json\JsonSQL\Parser;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
 
 /**
  *
@@ -186,7 +186,7 @@ trait DatasourcesTrait {
 	 * @param   \SimpleXMLElement $datasources DataSources.xml content
 	 * @param   string|null $databasesDir The database directory ID
 	 * @param   bool $withDbName (default: true) if false, the name of the database will not be inserted in the dsn string.
-	 * @return  \App\G6K\Model\Database The Database object
+	 * @return  \Devntech\G6K\Model\Database The Database object
 	 *
 	 */
 	protected function getDatabase($dsid, \SimpleXMLElement $datasources, $databasesDir = null, $withDbName = true) {
@@ -204,7 +204,7 @@ trait DatasourcesTrait {
 	 * Returns the list of tables of a database
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @return  array|string|bool|null The list of tables
 	 *
 	 */
@@ -241,7 +241,7 @@ trait DatasourcesTrait {
 	 * Returns informations about a table of a database
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   string $table The table name
 	 * @return  array|string|bool|null Informations about a table
 	 *
@@ -294,7 +294,7 @@ trait DatasourcesTrait {
 	 *
 	 * @access  protected
 	 * @param   \SimpleXMLElement $datasources The DataSources.xml content
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   string $table The table name
 	 * @return  array Informations about the columns
 	 *
@@ -579,7 +579,7 @@ trait DatasourcesTrait {
 	 * @param   array $row The row to insert
 	 * @param   string $table The table name
 	 * @param   array $infosColumns The informations about the columns
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @param   bool $restore (default: false) true if the row is to be restored, false otherwise
 	 * @param   bool $fromOtherTable (default: false) true if the row comes from another table
@@ -629,7 +629,7 @@ trait DatasourcesTrait {
 	 * @param   array $row The row
 	 * @param   string $table The table name
 	 * @param   \SimpleXMLElement $datasources The DataSources.xml content
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @param   bool $fromOtherTable (default: false) true if the row comes from another table
 	 * @return  bool|string
@@ -677,7 +677,7 @@ trait DatasourcesTrait {
 	 * @access  protected
 	 * @param   array $row The row
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @return  string|true
 	 *
@@ -837,7 +837,7 @@ trait DatasourcesTrait {
 	 * @param   string $dbtype The target database type
 	 * @param   \SimpleXMLElement $datasources The origin DataSources.xml content
 	 * @param   \SimpleXMLElement $fromDatasources The origin DataSources.xml content
-	 * @param   \App\G6K\Model\Database $fromDatabase The origin Database object
+	 * @param   \Devntech\G6K\Model\Database $fromDatabase The origin Database object
 	 * @param   string|null $databasesDir The database directory
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @param   callable|null $fprogress a function receiving the row number that's inserted
@@ -945,7 +945,7 @@ trait DatasourcesTrait {
 	 *
 	 * @access  protected
 	 * @param   array $form The form fields
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @return  string|true
 	 *
@@ -1024,7 +1024,7 @@ trait DatasourcesTrait {
 	 *
 	 * @access  protected
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @return  string|true
 	 *
@@ -1048,7 +1048,7 @@ trait DatasourcesTrait {
 	 * @access  protected
 	 * @param   array $form The form fields
 	 * @param   string $table The table name
-	 * @param   \App\G6K\Model\Database $database The Database object
+	 * @param   \Devntech\G6K\Model\Database $database The Database object
 	 * @param   \SimpleXMLElement $datasources The DataSources.xml content
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @return  string|true
@@ -1270,7 +1270,7 @@ trait DatasourcesTrait {
 	 * @access  protected
 	 * @param   string $table The table name
 	 * @param   string $alterdefs Comma separated alter specifications
-	 * @param   \App\G6K\Model\Database $database  The Database object
+	 * @param   \Devntech\G6K\Model\Database $database  The Database object
 	 * @param   \Symfony\Contracts\Translation\TranslatorInterface|null $translator (default: null) true if the row is to be restored, false otherwise
 	 * @return  bool Always true
 	 */

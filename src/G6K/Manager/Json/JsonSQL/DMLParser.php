@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\Json\JsonSQL;
+namespace Devntech\G6K\Manager\Json\JsonSQL;
 
-use App\G6K\Manager\Json\JsonSQL;
-use App\G6K\Manager\Splitter;
+use Devntech\G6K\Manager\Json\JsonSQL;
+use Devntech\G6K\Manager\Splitter;
 
 /**
  * This class allows you  to store and retrieve data from files in JSON format using SQL standard.
@@ -164,7 +164,7 @@ class DMLParser extends Parser {
 	 * Constructor of class DMLParser
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
+	 * @param   \Devntech\G6K\Manager\Json\JsonSQL $jsonsql The JsonSQL instance
 	 * @param   string $sql The DML statement
 	 * @return  void
 	 *

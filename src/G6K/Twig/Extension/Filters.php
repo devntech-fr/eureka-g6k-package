@@ -24,14 +24,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Twig\Extension;
+namespace Devntech\G6K\Twig\Extension;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
 use Symfony\Contracts\Translation\TranslatorInterface;
-use App\G6K\Model\RichText;
-use App\G6K\Manager\ExpressionParser\NumberFunction;
+use Devntech\G6K\Model\RichText;
+use Devntech\G6K\Manager\ExpressionParser\NumberFunction;
 
 /**
  * This class is a Twig extension custom filter that implements 'jscode' to replace the deprecated raw filter
@@ -106,7 +106,7 @@ class Filters extends AbstractExtension {
 	 * Returns the string as HTML raw
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $string The string to be filtered
+	 * @param   \Devntech\G6K\Model\RichText|string $string The string to be filtered
 	 * @return  string
 	 *
 	 */
@@ -140,7 +140,7 @@ class Filters extends AbstractExtension {
 	 * Returns the string as is without any modification
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $string The string to be filtered
+	 * @param   \Devntech\G6K\Model\RichText|string $string The string to be filtered
 	 * @return  string
 	 *
 	 */
@@ -153,7 +153,7 @@ class Filters extends AbstractExtension {
 	 * Replaces footnotes reference in a text by a html link
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $string
+	 * @param   \Devntech\G6K\Model\RichText|string $string
 	 * @return  string
 	 *
 	 */
@@ -169,7 +169,7 @@ class Filters extends AbstractExtension {
 	 * Removes footnotes reference in a text 
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\RichText|string $string
+	 * @param   \Devntech\G6K\Model\RichText|string $string
 	 * @return  string
 	 *
 	 */

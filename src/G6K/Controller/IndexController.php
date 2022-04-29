@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Controller;
+namespace Devntech\G6K\Controller;
 
-use App\G6K\Manager\ControllersTrait;
+use Devntech\G6K\Manager\ControllersTrait;
 
 use Symfony\Component\HttpFoundation\Request;
 use App\Security\Util\AccessControlInterface;

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -43,7 +43,7 @@ namespace App\G6K\Model;
 class DataSource {
 
 	/**
-	 * @var  \App\G6K\Model\Simulator $simulator The Simulator object that uses this data source
+	 * @var  \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this data source
 	 *
 	 * @access  private
 	 *
@@ -126,7 +126,7 @@ class DataSource {
 	 * Constructor of class DataSource
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Simulator $simulator The Simulator object that uses this data source
+	 * @param   \Devntech\G6K\Model\Simulator $simulator The Simulator object that uses this data source
 	 * @param   int        $id The ID of this data source
 	 * @param   string     $name The name of this data source
 	 * @param   string     $type The type of this data source : uri, internal or database
@@ -144,7 +144,7 @@ class DataSource {
 	 * Returns the Simulator object that uses this data source
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Simulator The Simulator Object 
+	 * @return  \Devntech\G6K\Model\Simulator The Simulator Object 
 	 *
 	 */
 	public function getSimulator() {
@@ -383,7 +383,7 @@ class DataSource {
 	 * Adds a table to the list of tables in the database of this data source.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Table $table The table to add
+	 * @param   \Devntech\G6K\Model\Table $table The table to add
 	 * @return  void
 	 *
 	 */

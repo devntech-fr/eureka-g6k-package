@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager\ExpressionParser;
+namespace Devntech\G6K\Manager\ExpressionParser;
 
 /**
  *
@@ -79,7 +79,7 @@ class Expression {
 	 * Adds a token at the end of the token list of this expression.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Manager\ExpressionParser\Token $t The token to be added
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token $t The token to be added
 	 * @return  void
 	 *
 	 */
@@ -91,7 +91,7 @@ class Expression {
 	 * Returns the last added token of this expression and removes it from the list of tokens.
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Manager\ExpressionParser\Token The last added token
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token The last added token
 	 *
 	 */
 	public function pop(){
@@ -102,7 +102,7 @@ class Expression {
 	 * Returns the last added token of this expression
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Manager\ExpressionParser\Token The last added token
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token The last added token
 	 *
 	 */
 	public function peek(){
@@ -248,7 +248,7 @@ class Expression {
 	 * Detects the type of the given value, converts it according to this type and sets the value of the given token with the result.
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$token The given token
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$token The given token
 	 * @param   string $value The given value
 	 * @return  void
 	 *
@@ -275,7 +275,7 @@ class Expression {
 	 * Converts the given value into a DateTime object and sets the value of the given token with the result.
 	 *
 	 * @access  protected
-	 * @param   \App\G6K\Manager\ExpressionParser\Token &$token The given token
+	 * @param   \Devntech\G6K\Manager\ExpressionParser\Token &$token The given token
 	 * @param   string $value The given value
 	 * @return  void
 	 * @throws \Exception
@@ -290,7 +290,7 @@ class Expression {
 	 * Evaluates this expression
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Manager\ExpressionParser\Token|false The result token of the evaluation
+	 * @return  \Devntech\G6K\Manager\ExpressionParser\Token|false The result token of the evaluation
 	 *
 	 */
 	public function evaluate() {

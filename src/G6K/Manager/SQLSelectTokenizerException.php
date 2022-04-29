@@ -23,12 +23,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Manager;
+namespace Devntech\G6K\Manager;
 
 /**
  * This class Represents an error raised by SQLSelectTokenizer.
  *
- * @package App\G6K\Manager
+ * @package Devntech\G6K\Manager
  * @version 1.0
  * @author Jacques Archimède
  */

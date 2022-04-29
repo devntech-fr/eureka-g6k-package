@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Command;
+namespace Devntech\G6K\Command;
 
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
@@ -32,10 +32,10 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Exception\LogicException;
 use Symfony\Component\Yaml\Yaml;
 
-use App\G6K\Manager\ExpressionParser\DateFunction;
-use App\G6K\Manager\ExpressionParser\MoneyFunction;
+use Devntech\G6K\Manager\ExpressionParser\DateFunction;
+use Devntech\G6K\Manager\ExpressionParser\MoneyFunction;
 
-use App\G6K\Model\Data;
+use Devntech\G6K\Model\Data;
 
 /**
 Base class for all command of the g6k:simulator namespace.

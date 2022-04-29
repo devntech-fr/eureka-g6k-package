@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  *
@@ -36,7 +36,7 @@ namespace App\G6K\Model;
 class Row {
 
 	/**
-	 * @var \App\G6K\Model\Table $table The Table object to which this row belongs
+	 * @var \Devntech\G6K\Model\Table $table The Table object to which this row belongs
 	 *
 	 * @access  private
 	 *
@@ -55,7 +55,7 @@ class Row {
 	 * Constructor of class Row
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Table $table The Table object to which this row belongs
+	 * @param   \Devntech\G6K\Model\Table $table The Table object to which this row belongs
 	 * @return  void
 	 *
 	 */
@@ -67,7 +67,7 @@ class Row {
 	 * Retrieves the Table object to which this row belongs
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Table The Table object
+	 * @return  \Devntech\G6K\Model\Table The Table object
 	 *
 	 */
 	public function getTable() {
@@ -101,7 +101,7 @@ class Row {
 	 * Adds a cell (Cell object) to this row
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Cell $cell The Cell object 
+	 * @param   \Devntech\G6K\Model\Cell $cell The Cell object 
 	 * @return  void
 	 *
 	 */
@@ -114,7 +114,7 @@ class Row {
 	 *
 	 * @access  public
 	 * @param   int $index index of a cell in the array of cells 
-	 * @return  \App\G6K\Model\Cell  The Cell object 
+	 * @return  \Devntech\G6K\Model\Cell  The Cell object 
 	 *
 	 */
 	public function getCell($index) {

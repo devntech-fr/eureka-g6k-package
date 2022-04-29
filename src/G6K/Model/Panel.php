@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-namespace App\G6K\Model;
+namespace Devntech\G6K\Model;
 
 /**
  * This class allows the storage and retrieval of the attributes of a panel.
@@ -43,7 +43,7 @@ namespace App\G6K\Model;
 class Panel {
 
 	/**
-	 * @var \App\G6K\Model\Step $step The Step object that contains this panel.  
+	 * @var \Devntech\G6K\Model\Step $step The Step object that contains this panel.  
 	 *
 	 * @access  private
 	 *
@@ -94,7 +94,7 @@ class Panel {
 	 * Constructor of class Panel
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\Step $step The Step object that contains this panel.   
+	 * @param   \Devntech\G6K\Model\Step $step The Step object that contains this panel.   
 	 * @param   int        $id The id of the panel.
 	 * @return  void
 	 *
@@ -108,7 +108,7 @@ class Panel {
 	 * Returns the Step object that contains this panel
 	 *
 	 * @access  public
-	 * @return  \App\G6K\Model\Step The Step object
+	 * @return  \Devntech\G6K\Model\Step The Step object
 	 *
 	 */
 	public function getStep() {
@@ -211,7 +211,7 @@ class Panel {
 	 * Adds a Fieldset or BlockInfo object to the list of field sets or block of informations contained in this panel.
 	 *
 	 * @access  public
-	 * @param   \App\G6K\Model\FieldSet|\App\G6K\Model\BlockInfo $fieldset The FieldSet or BlockInfo object
+	 * @param   \Devntech\G6K\Model\FieldSet|\Devntech\G6K\Model\BlockInfo $fieldset The FieldSet or BlockInfo object
 	 * @return  void
 	 *
 	 */
@@ -236,7 +236,7 @@ class Panel {
 	 *
 	 * @access  public
 	 * @param   int $id The id of Fieldset object 
-	 * @return  \App\G6K\Model\Fieldset|null The Fieldset object
+	 * @return  \Devntech\G6K\Model\Fieldset|null The Fieldset object
 	 *
 	 */
 	public function getFieldSetById($id) {
@@ -253,7 +253,7 @@ class Panel {
 	 *
 	 * @access  public
 	 * @param   int $id The id of the BlockInfo object
-	 * @return  \App\G6K\Model\BlockInfo|null The BlockInfo object
+	 * @return  \Devntech\G6K\Model\BlockInfo|null The BlockInfo object
 	 *
 	 */
 	public function getBlockInfoById($id) {
@@ -270,7 +270,7 @@ class Panel {
 	 *
 	 * @access  public
 	 * @param   int $id The id of the BlockInfo or the Fieldset object
-	 * @return  \App\G6K\Model\BlockInfo|\App\G6K\Model\Fieldset|null The BlockInfo or the Fieldset object
+	 * @return  \Devntech\G6K\Model\BlockInfo|\Devntech\G6K\Model\Fieldset|null The BlockInfo or the Fieldset object
 	 *
 	 */
 	public function getBlockById($id) {
